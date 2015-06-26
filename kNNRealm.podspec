@@ -10,18 +10,21 @@
 Pod::Spec.new do |s|
   s.name             = "kNNRealm"
   s.version          = "0.1.0"
-  s.summary          = "A short description of kNNRealm."
+  s.summary          = "Simple k-nearest neighbors methods library using RealmSwift."
   s.description      = <<-DESC
-                       An optional longer description of kNNRealm
+                       Simple k-nearest neighbors methods library using RealmSwift.
 
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       Features
+
+                         - Fast approximate search by using powerful realm queries
+                         - More Fast with locality sensitive hashing (LSH)
+                         - Works on both iOS & OS X
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/kNNRealm"
+  s.homepage         = "https://github.com/rkawajiri/kNNRealm"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Kawajiri Ryoma" => "ryoma.edison@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/kNNRealm.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/rkawajiri/kNNRealm.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '8.0'
@@ -34,5 +37,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'RealmSwift', '~> 0.92.3'
 end
