@@ -78,9 +78,33 @@ class GeneratedDataSetSpec: QuickSpec {
         }
 
         it("can search correct label") {
+          knn?.add(data)
+
           for dog in data {
             let nearestDogs = knn?.search(dog)
             expect(nearestDogs?.count) == k
+          }
+
+          for dog in data {
+            let nearestDogs = knn?.search(dog)
+            let actual = nearestDogs?.map { dog in Int(dog.height) }
+            let i = Int(dog.height)
+            switch i {
+            case 1:
+              expect(actual) == [1, 2, 3]
+              break
+
+            case 2...8:
+              expect(actual) == [i, i-1, i+1]
+              break
+
+            case 9:
+              expect(actual) == [9, 8, 7]
+              break
+
+            default:
+              break
+            }
           }
         }
       }
@@ -89,9 +113,5 @@ class GeneratedDataSetSpec: QuickSpec {
 
       }
     }
-  }
-  
-  private func generateData() {
-    
   }
 }

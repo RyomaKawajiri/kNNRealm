@@ -30,13 +30,13 @@ public class kNNRealm<T: Object> {
   public func search(q: T) -> [T] {
     let results = query(q: q, results: realm.objects(T))
 
-    var ret = [T](count: results.count, repeatedValue: T())
+    var ret = [T]()
     for result in results {
       ret.append(result)
     }
 
-    ret.sorted { (a, b) -> Bool in
-      return self.distance(l: q, r: a) > self.distance(l: q, r: b)
+    ret.sort { (a, b) -> Bool in
+      return self.distance(l: q, r: a) < self.distance(l: q, r: b)
     }
 
     if ret.count > k {
