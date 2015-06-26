@@ -59,91 +59,67 @@ class GeneratedDataSetSpec: QuickSpec {
 
     var knn: kNNRealm<Dog>?
 
+    let checkSearchCorrectly = { () -> Void in
+      for dog in data {
+        let nearestDogs = knn?.search(dog)
+        expect(nearestDogs?.count) == k
+      }
+
+      for dog in data {
+        let nearestDogs = knn?.search(dog)
+        let actual = nearestDogs?.map { dog in Int(dog.height) }
+        let i = Int(dog.height)
+        switch i {
+        case 1:
+          expect(actual) == [1, 2, 3]
+          break
+
+        case 2...8:
+          expect(actual) == [i, i-1, i+1]
+          break
+
+        case 9:
+          expect(actual) == [9, 8, 7]
+          break
+
+        default:
+          break
+        }
+      }
+    }
+
     beforeEach {
-      // set test data to realm
       deleteRealmFilesAtPath(realmPath)
       knn = kNNRealm<Dog>(realm: Realm(path: realmPath), k: k, query: query, distance: distance)
     }
 
     afterEach {
-      // clear all realm
       deleteRealmFilesAtPath(realmPath)
     }
 
     describe("basic") {
-      describe("add data by kNNRealm") {
-        it("can be added data") {
+      describe("when added data by kNNRealm") {
+        it("works") {
           knn?.add(data)
           expect(Realm(path: realmPath).objects(Dog).count) == data.count
         }
 
-        it("can search correct label") {
+        it("can search correctly") {
           knn?.add(data)
-
-          for dog in data {
-            let nearestDogs = knn?.search(dog)
-            expect(nearestDogs?.count) == k
-          }
-
-          for dog in data {
-            let nearestDogs = knn?.search(dog)
-            let actual = nearestDogs?.map { dog in Int(dog.height) }
-            let i = Int(dog.height)
-            switch i {
-            case 1:
-              expect(actual) == [1, 2, 3]
-              break
-
-            case 2...8:
-              expect(actual) == [i, i-1, i+1]
-              break
-
-            case 9:
-              expect(actual) == [9, 8, 7]
-              break
-
-            default:
-              break
-            }
-          }
+          checkSearchCorrectly()
         }
       }
 
-      describe("start from already built realm") {
+      describe("when with pre-built realm") {
         beforeEach {
           let realm = Realm(path: realmPath)
           realm.write {
             realm.add(data)
           }
         }
-
-        it ("can search") {
-          for dog in data {
-            let nearestDogs = knn?.search(dog)
-            expect(nearestDogs?.count) == k
-          }
-
-          for dog in data {
-            let nearestDogs = knn?.search(dog)
-            let actual = nearestDogs?.map { dog in Int(dog.height) }
-            let i = Int(dog.height)
-            switch i {
-            case 1:
-              expect(actual) == [1, 2, 3]
-              break
-
-            case 2...8:
-              expect(actual) == [i, i-1, i+1]
-              break
-              
-            case 9:
-              expect(actual) == [9, 8, 7]
-              break
-              
-            default:
-              break
-            }
-          }
+        
+        it ("can search correctly") {
+          checkSearchCorrectly()
         }
       }
     }
