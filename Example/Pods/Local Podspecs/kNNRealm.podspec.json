@@ -1,0 +1,25 @@
+{
+  "name": "kNNRealm",
+  "version": "0.1.0",
+  "summary": "A short description of kNNRealm.",
+  "description": "                       An optional longer description of kNNRealm\n\n                       * Markdown format.\n                       * Don't worry about the indent, we strip it!\n",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/kNNRealm",
+  "license": "MIT",
+  "authors": {
+    "Kawajiri Ryoma": "ryoma.edison@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/kNNRealm.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "kNNRealm": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

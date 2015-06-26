@@ -1,0 +1,1592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		001504A3ED174EBFF54BCC41 /* Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2D20A5F2319B59EED92699 /* Functional.swift */; };
+		00AE3BC6068B9B2BE9335CF9 /* SourceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08183361A7349B1CB002C19F /* SourceLocation.swift */; };
+		04D9B889D29A07A0E0F6E311 /* Pods-kNNRealm_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A41E3BBAC535E0B6DF8A0D15 /* Pods-kNNRealm_Tests-dummy.m */; };
+		07B76837A57804ED1B2C2318 /* Pods-kNNRealm_Tests-Quick-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1B7609703EE20C2A073036 /* Pods-kNNRealm_Tests-Quick-dummy.m */; };
+		084F6CB7992CE00129BCC4CF /* Pods-kNNRealm_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 912652AA6FC36701ADA78E37 /* Pods-kNNRealm_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09DBD978D83AD705F09592C6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B474434C724B4810093C610 /* XCTest.framework */; };
+		0AE6C182E2E395EEC0CB7A5D /* EndWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81258E0E17CA345E77B702E2 /* EndWith.swift */; };
+		0D0E2A9E200686310A9ABA30 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A89D88CC48544C6A8585CB9 /* Expression.swift */; };
+		0E1C725625FF7BB4FB9DAB31 /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A42BD39F5DF3F8B3D3A1C5 /* DSL.swift */; };
+		1DFC86A99D8228BF0CCCEB7B /* BeGreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF134CB3FBF8FFF4004ECCC /* BeGreaterThan.swift */; };
+		21C0B55EBD47ECE803B6C8D0 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971E0D27463A7E788CCD69E6 /* Example.swift */; };
+		22BD2B15D0234F0431A0059A /* kNNRealm.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D583756627B12FE566E15901 /* kNNRealm.bundle */; };
+		2C12FB6ECC9E9CFC375FD61C /* World+DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3474AFF8A959E73FCEDAE3B /* World+DSL.swift */; };
+		35175CA062E9EFB1F5B9B8BC /* Nimble.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F4A7F4CDE847AC6D45E2A51 /* Nimble.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		364EB3833BD73DD493B1E2D8 /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5170F19D02018CA10DBC0 /* Expectation.swift */; };
+		4164AFD9FCA85F8AAAA5F83E /* BeLogical.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB45D271AE4DC489B3286542 /* BeLogical.swift */; };
+		433C6125DB8AEFA7EF44E644 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8211676D50735749BEC1C94 /* Foundation.framework */; };
+		46C297D6F14E1F72FCA16B95 /* Pods-kNNRealm_Tests-kNNRealm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A53A1E29606C9CE092B688 /* Pods-kNNRealm_Tests-kNNRealm-dummy.m */; };
+		46E6D7DC7C3C97F76653985E /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25917AC3B7BE0D80CB1CEFE5 /* DSL.swift */; };
+		4CD6CAF0510ED45A0C0CBD78 /* ExampleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E37A746B4FD26AAF9E6F983 /* ExampleGroup.swift */; };
+		4D25E71985ED3DE93BF5D62D /* DSL.h in Headers */ = {isa = PBXBuildFile; fileRef = A934C2FE28E2DE0048AF645B /* DSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50055ED8D202E0114B1A19B7 /* DSL+Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB45CDB3C01B34538B2CB2C3 /* DSL+Wait.swift */; };
+		505E59948B5A882CCF1B66EB /* Pods-kNNRealm_Example-kNNRealm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82342A5B7AD5EC21CA9BFE3C /* Pods-kNNRealm_Example-kNNRealm-dummy.m */; };
+		5B8FB6A2145C62BBE8DAB95B /* BeIdenticalTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E3AC7EA6B77EFD1EDA0D30 /* BeIdenticalTo.swift */; };
+		5DBA8EB4F58713D1D92E88F8 /* Pods-kNNRealm_Tests-Nimble-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FA7217FD589216CD1E55710 /* Pods-kNNRealm_Tests-Nimble-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63B18B390495746FB13FF5E0 /* BeAKindOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A00E7AF95A6D77860D59AD /* BeAKindOf.swift */; };
+		6407E6BBD6A8E13ED03F38E7 /* Pods-kNNRealm_Tests-Quick-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F27EC6A0B3858373DD53FE2A /* Pods-kNNRealm_Tests-Quick-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D7940D43F90C615270900C5 /* NSString+QCKSelectorName.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC0980F4A74B23DA2E1FEF9 /* NSString+QCKSelectorName.m */; };
+		6DA670D337C7F6E8EDC658B2 /* Pods-kNNRealm_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F6286C8B9C6D36A82E10AD /* Pods-kNNRealm_Example-dummy.m */; };
+		6F0042EFC6FB6434FA184F1A /* AdapterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F7529CA047CF2150BA3ED2 /* AdapterProtocols.swift */; };
+		76BA5C1F17B282AF6E620D6D /* BeCloseTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BB888187D829C6EF03987 /* BeCloseTo.swift */; };
+		7A74564AE251506690A8BC33 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7AB9A5A6978F49BFAAEC48 /* Configuration.swift */; };
+		7AD85D33540D2DD922A11100 /* BeLessThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2967D65CAC048237E08FF38C /* BeLessThan.swift */; };
+		81210A9B2E38B2412C1B2BEF /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ABCD18E150CF3BE2694DF /* ReplaceMe.swift */; };
+		869698112C6F8FC622A195DC /* BeginWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B2CB79FDDC636CD27FA70C /* BeginWith.swift */; };
+		89163A8F56CCC2A52B3A0A63 /* Stringers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8FF74875F5D218F070B6F7 /* Stringers.swift */; };
+		89E3F52A2E80C114FC368B3E /* BasicMatcherWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC08CC6CC3379D72E0674BE3 /* BasicMatcherWrapper.swift */; };
+		8AABE689F02B0BE616589CA9 /* Pods-kNNRealm_Tests-Nimble-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7548294B295B13BD856FB23 /* Pods-kNNRealm_Tests-Nimble-dummy.m */; };
+		8B775FD1A502C324BAB963FC /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ABCD18E150CF3BE2694DF /* ReplaceMe.swift */; };
+		8C5E322C2BE4001E89EE5896 /* Pods-kNNRealm_Example-kNNRealm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 53A78BBF25E79EDC2E0F5C76 /* Pods-kNNRealm_Example-kNNRealm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9701A8F7AA4DB36712AB5114 /* NMBExceptionCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA9739C495DFF7560262398 /* NMBExceptionCapture.m */; };
+		972AB8E3057D06BCBD63BA8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8211676D50735749BEC1C94 /* Foundation.framework */; };
+		977BFC657B3110915072C596 /* BeNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E72E344CE22F4A86A0CB80D /* BeNil.swift */; };
+		98F4740A03BA37DDC030C7DE /* QCKDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B2338837F19AF25FED007 /* QCKDSL.m */; };
+		9C86FE7DD2A0EC741CD9EDE8 /* QuickConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = F5D8450565E7A8CD87F34E35 /* QuickConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EC82E25813B7141BC140847 /* QuickSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC13CFC835F8BAF34C8309 /* QuickSpec.m */; };
+		9F527FB4584F6F4FDD741645 /* Poll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592A42CEB5F29D2939E51E4B /* Poll.swift */; };
+		A15B5C6AAB0DF790A1537066 /* Equal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D8B3C3FBEFF39F068E8F42 /* Equal.swift */; };
+		A3F87612E9EECA943DCE1F5A /* BeLessThanOrEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E0FB69EB21E6D6E38C3B7F /* BeLessThanOrEqual.swift */; };
+		AE3E4439A63534B705FDBA9A /* AsyncMatcherWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631B970584C605CAD04112CC /* AsyncMatcherWrapper.swift */; };
+		AE99E3A78E5E9A06CA6A125B /* RaisesException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2769660E918C70EA0A292D84 /* RaisesException.swift */; };
+		B09B60FA43A48E5C4D545725 /* BeGreaterThanOrEqualTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D3082C669E128DCEA0C8EC /* BeGreaterThanOrEqualTo.swift */; };
+		B09B648C205F5DDD7EF1264E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8211676D50735749BEC1C94 /* Foundation.framework */; };
+		B0A82A2597CCE5BF36C9DDEF /* SuiteHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E634D7F9E6CF3F5BE3491EFA /* SuiteHooks.swift */; };
+		B4C67F90D91E4756D41A165A /* QuickSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = B99B4BF833C8B1C022C92AC4 /* QuickSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F5E797E8C86D277D6A95E5 /* MatcherFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEA6EF098939BA09E1C6B31 /* MatcherFunc.swift */; };
+		B6109CB1EC29713BFA1C63A7 /* NMBExceptionCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = A0A56F5CEB42AD9E76DE3652 /* NMBExceptionCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB433EE0E8F7D63F4C3B016B /* AssertionRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509A9536CAC3A8E4BECFF7D1 /* AssertionRecorder.swift */; };
+		BBACE5FC0ED17A97C822C5BC /* NimbleXCTestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC56FA2317402541A818F29E /* NimbleXCTestHandler.swift */; };
+		BD92EFBB8EECB4D76CAD9506 /* FullMatcherWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CD9F60836FB1BC856D9313 /* FullMatcherWrapper.swift */; };
+		BE3066DBA314757A3BF9D4D5 /* BeAnInstanceOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04383991969B61CFD406D28F /* BeAnInstanceOf.swift */; };
+		BF7F8A3E3E21357D299014E8 /* kNNRealm.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CA0EADC5B743F75296015B9A /* kNNRealm.bundle */; };
+		BFE26D2C28A711D4A75A907E /* Quick.h in Headers */ = {isa = PBXBuildFile; fileRef = 46BA56DD7C1479F0E418A50A /* Quick.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C18837F8BFA348C517E9D37F /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DB23B00B76DC5418BF540B /* Closures.swift */; };
+		C2FD6847B75E8A06C5DFDF75 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B7D6D634FAA9F07BBEC429 /* Filter.swift */; };
+		C3BA4F610A7728A2262A776C /* Pods-kNNRealm_Tests-kNNRealm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFE295DF84D2A9AADC43D2C /* Pods-kNNRealm_Tests-kNNRealm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8ABF5EB69B1212AC0C1E369 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8211676D50735749BEC1C94 /* Foundation.framework */; };
+		CA6B2161D2BA1C6A6E808081 /* QCKDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A967C306173A73442B3DC0 /* QCKDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEF155370CC481AF83C5FCC4 /* BeEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11A1A78B53EC1C6E278A0B4 /* BeEmpty.swift */; };
+		CFB427ACA5814DD5AC9EDF0B /* AllPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F37F6C1E5F4582A7A064669 /* AllPass.swift */; };
+		D281E1984F8F54A87606FA58 /* NonNilMatcherWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A2213930BB01939AC44AC9 /* NonNilMatcherWrapper.swift */; };
+		D45E61443FA36A2F54C1577C /* DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D11580443DE3253D80F319 /* DSL.m */; };
+		D7B8A92EBD78D5F7B04F16DB /* MatcherProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CBEC4C8C8888EFB7187424 /* MatcherProtocols.swift */; };
+		DBB64EC33E95CD09C1BCE7E5 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C61E9D1C950A5BCB29A04 /* Match.swift */; };
+		E0215618BEF7843C93A67529 /* ExampleHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FDBDDE5CCF4F43156ED92B /* ExampleHooks.swift */; };
+		E15E3ED9394CC27EE83086F2 /* ObjCMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C33DBE90F0D97A1E5489AE /* ObjCMatcher.swift */; };
+		E179EF64580403087CC3377E /* Failure.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E9B07A217E0C22AB8D19C4 /* Failure.swift */; };
+		E694E74ABBF669DEF16F5CF6 /* ExampleMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F1B08144D3FAB1DE7E8F03 /* ExampleMetadata.swift */; };
+		E6E127889BFA885DA6191B6F /* NSString+QCKSelectorName.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FAC8AB05F6561F87DFB3185 /* NSString+QCKSelectorName.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE4DAA6FC72386244A194EB /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885D26671FFB1C07CAAAB7E1 /* World.swift */; };
+		EEDF3CA8CA1C2CC911B5BB8D /* Pods-kNNRealm_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3761BB9A3691EAC38A182503 /* Pods-kNNRealm_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF747314EF03FC02E4C3BCDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8211676D50735749BEC1C94 /* Foundation.framework */; };
+		F0F3EB91A4E01AB82A13D925 /* FailureMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94F35C55BB5D9A8E65615C9 /* FailureMessage.swift */; };
+		F3F969A003DB37A917639C8E /* Contain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCAC5D4ABA05000C10DF51E /* Contain.swift */; };
+		F83189F7E263DECFFED58133 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8211676D50735749BEC1C94 /* Foundation.framework */; };
+		F8F43D180FE8BF6C9333C2B6 /* Callsite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F61884CF9554B62319D7ECD /* Callsite.swift */; };
+		FA45522A7AEF015C2C167A82 /* QuickConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3E41AD56EAD2F62CFCAC2A /* QuickConfiguration.m */; };
+		FCE1A1D5BB6F99188367458C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B474434C724B4810093C610 /* XCTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		162E58C1CC4D3E0556DB1617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EC8E5663085763F13D95E11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 872D8223948431E2885EB21D;
+			remoteInfo = "Pods-kNNRealm_Example-kNNRealm-kNNRealm";
+		};
+		3F127EE1B6D1C3FD7B2B38D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EC8E5663085763F13D95E11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8A2816956D177185694F5BA;
+			remoteInfo = "Pods-kNNRealm_Tests-Nimble";
+		};
+		5802E5FC2A5D2A141CFAB30D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EC8E5663085763F13D95E11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 170CDF2EA5EE32C230574F66;
+			remoteInfo = "Pods-kNNRealm_Tests-Quick";
+		};
+		70BCEF0E43A1CCC35C5DAECF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EC8E5663085763F13D95E11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0DD2388BA61F7CC07BB71E0C;
+			remoteInfo = "Pods-kNNRealm_Tests-kNNRealm";
+		};
+		A535A85100F9B147EB0ECC1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EC8E5663085763F13D95E11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B502BD2AA6C7EA0EA2E5512;
+			remoteInfo = "Pods-kNNRealm_Example-kNNRealm";
+		};
+		F6666BF11286EA4807A8C851 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EC8E5663085763F13D95E11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 101A75B7EB813DA82E58FBE8;
+			remoteInfo = "Pods-kNNRealm_Tests-kNNRealm-kNNRealm";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01E3AC7EA6B77EFD1EDA0D30 /* BeIdenticalTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeIdenticalTo.swift; path = Nimble/Matchers/BeIdenticalTo.swift; sourceTree = "<group>"; };
+		023BB888187D829C6EF03987 /* BeCloseTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeCloseTo.swift; path = Nimble/Matchers/BeCloseTo.swift; sourceTree = "<group>"; };
+		04383991969B61CFD406D28F /* BeAnInstanceOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeAnInstanceOf.swift; path = Nimble/Matchers/BeAnInstanceOf.swift; sourceTree = "<group>"; };
+		04F6286C8B9C6D36A82E10AD /* Pods-kNNRealm_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-kNNRealm_Example-dummy.m"; sourceTree = "<group>"; };
+		08183361A7349B1CB002C19F /* SourceLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SourceLocation.swift; path = Nimble/Utils/SourceLocation.swift; sourceTree = "<group>"; };
+		0E37A746B4FD26AAF9E6F983 /* ExampleGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleGroup.swift; path = Quick/ExampleGroup.swift; sourceTree = "<group>"; };
+		0E72E344CE22F4A86A0CB80D /* BeNil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeNil.swift; path = Nimble/Matchers/BeNil.swift; sourceTree = "<group>"; };
+		0F4A7F4CDE847AC6D45E2A51 /* Nimble.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Nimble.h; path = Nimble/Nimble.h; sourceTree = "<group>"; };
+		11B1C814B2D482FFD3FC3C99 /* Pods-kNNRealm_Example-kNNRealm-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-kNNRealm_Example-kNNRealm-prefix.pch"; sourceTree = "<group>"; };
+		12B2CB79FDDC636CD27FA70C /* BeginWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeginWith.swift; path = Nimble/Matchers/BeginWith.swift; sourceTree = "<group>"; };
+		14311A155DA199B4417A57CD /* Pods-kNNRealm_Tests-Nimble-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kNNRealm_Tests-Nimble-Private.xcconfig"; sourceTree = "<group>"; };
+		177354B918610CC8A14EED7A /* Pods-kNNRealm_Tests-kNNRealm-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-kNNRealm_Tests-kNNRealm-prefix.pch"; path = "../Pods-kNNRealm_Tests-kNNRealm/Pods-kNNRealm_Tests-kNNRealm-prefix.pch"; sourceTree = "<group>"; };
+		17DB23B00B76DC5418BF540B /* Closures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Closures.swift; path = Quick/Hooks/Closures.swift; sourceTree = "<group>"; };
+		1A2D20A5F2319B59EED92699 /* Functional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Functional.swift; path = Nimble/Utils/Functional.swift; sourceTree = "<group>"; };
+		1EAF92E1C7CFAB5C46DFEA77 /* Pods-kNNRealm_Tests-Nimble.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-kNNRealm_Tests-Nimble.modulemap"; sourceTree = "<group>"; };
+		1F0F72F167A507E883E1CB4E /* Pods-kNNRealm_Tests-Quick-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kNNRealm_Tests-Quick-Private.xcconfig"; sourceTree = "<group>"; };
+		1F53C7176593CDF6C2D9F64A /* Pods-kNNRealm_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kNNRealm_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		241388C00092AA48E91EA174 /* Pods-kNNRealm_Tests-kNNRealm-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kNNRealm_Tests-kNNRealm-Private.xcconfig"; path = "../Pods-kNNRealm_Tests-kNNRealm/Pods-kNNRealm_Tests-kNNRealm-Private.xcconfig"; sourceTree = "<group>"; };
+		25917AC3B7BE0D80CB1CEFE5 /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Nimble/DSL.swift; sourceTree = "<group>"; };
+		2769660E918C70EA0A292D84 /* RaisesException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RaisesException.swift; path = Nimble/Matchers/RaisesException.swift; sourceTree = "<group>"; };
+		2894F4C6692269DA3E4CFCAE /* Pods-kNNRealm_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-kNNRealm_Tests-environment.h"; sourceTree = "<group>"; };
+		28B7D6D634FAA9F07BBEC429 /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Quick/Filter.swift; sourceTree = "<group>"; };
+		2967D65CAC048237E08FF38C /* BeLessThan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLessThan.swift; path = Nimble/Matchers/BeLessThan.swift; sourceTree = "<group>"; };
+		326F1BD763D8F9847693CAA2 /* Pods-kNNRealm_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kNNRealm_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		370DB69D6611CC689F7B4195 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3761BB9A3691EAC38A182503 /* Pods-kNNRealm_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-kNNRealm_Example-umbrella.h"; sourceTree = "<group>"; };
+		37F7CABA4E6B21B0522B564B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38F7529CA047CF2150BA3ED2 /* AdapterProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdapterProtocols.swift; path = Nimble/Adapters/AdapterProtocols.swift; sourceTree = "<group>"; };
+		3F01541E276687EF2247BADC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F8FF74875F5D218F070B6F7 /* Stringers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stringers.swift; path = Nimble/Utils/Stringers.swift; sourceTree = "<group>"; };
+		3FAC8AB05F6561F87DFB3185 /* NSString+QCKSelectorName.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+QCKSelectorName.h"; path = "Quick/NSString+QCKSelectorName.h"; sourceTree = "<group>"; };
+		413469CB622E25948C1267F1 /* Pods-kNNRealm_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kNNRealm_Example-frameworks.sh"; sourceTree = "<group>"; };
+		4520FBA32450DB1D39144BFC /* Pods-kNNRealm_Tests-kNNRealm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-kNNRealm_Tests-kNNRealm.modulemap"; path = "../Pods-kNNRealm_Tests-kNNRealm/Pods-kNNRealm_Tests-kNNRealm.modulemap"; sourceTree = "<group>"; };
+		46BA56DD7C1479F0E418A50A /* Quick.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Quick.h; path = Quick/Quick.h; sourceTree = "<group>"; };
+		47A54BF5A3B7E5A45707D427 /* Pods-kNNRealm_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kNNRealm_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		490BE90A88118AF67F5EC0C4 /* Pods-kNNRealm_Tests-Quick-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-kNNRealm_Tests-Quick-prefix.pch"; sourceTree = "<group>"; };
+		4B474434C724B4810093C610 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4C6B2338837F19AF25FED007 /* QCKDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QCKDSL.m; path = Quick/DSL/QCKDSL.m; sourceTree = "<group>"; };
+		509A9536CAC3A8E4BECFF7D1 /* AssertionRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertionRecorder.swift; path = Nimble/Adapters/AssertionRecorder.swift; sourceTree = "<group>"; };
+		50A42BD39F5DF3F8B3D3A1C5 /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Quick/DSL/DSL.swift; sourceTree = "<group>"; };
+		527ED385CACE77C36F41BEF7 /* Pods-kNNRealm_Tests-kNNRealm.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kNNRealm_Tests-kNNRealm.xcconfig"; path = "../Pods-kNNRealm_Tests-kNNRealm/Pods-kNNRealm_Tests-kNNRealm.xcconfig"; sourceTree = "<group>"; };
+		53A78BBF25E79EDC2E0F5C76 /* Pods-kNNRealm_Example-kNNRealm-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-kNNRealm_Example-kNNRealm-umbrella.h"; sourceTree = "<group>"; };
+		58FC13CFC835F8BAF34C8309 /* QuickSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickSpec.m; path = Quick/QuickSpec.m; sourceTree = "<group>"; };
+		592A42CEB5F29D2939E51E4B /* Poll.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Poll.swift; path = Nimble/Utils/Poll.swift; sourceTree = "<group>"; };
+		5A89D88CC48544C6A8585CB9 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Nimble/Expression.swift; sourceTree = "<group>"; };
+		5C3E41AD56EAD2F62CFCAC2A /* QuickConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickConfiguration.m; path = Quick/Configuration/QuickConfiguration.m; sourceTree = "<group>"; };
+		5D5DF681229033CE5A3CAB74 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D94928E9BA361D18122E183 /* Pods-kNNRealm_Tests-Nimble.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kNNRealm_Tests-Nimble.xcconfig"; sourceTree = "<group>"; };
+		5DCAC5D4ABA05000C10DF51E /* Contain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Contain.swift; path = Nimble/Matchers/Contain.swift; sourceTree = "<group>"; };
+		5DEA6EF098939BA09E1C6B31 /* MatcherFunc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherFunc.swift; path = Nimble/Wrappers/MatcherFunc.swift; sourceTree = "<group>"; };
+		61F1B08144D3FAB1DE7E8F03 /* ExampleMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleMetadata.swift; path = Quick/ExampleMetadata.swift; sourceTree = "<group>"; };
+		631B970584C605CAD04112CC /* AsyncMatcherWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncMatcherWrapper.swift; path = Nimble/Wrappers/AsyncMatcherWrapper.swift; sourceTree = "<group>"; };
+		66263E6BEA0185FBA8138927 /* Pods_kNNRealm_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kNNRealm_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B9FD00F1F23F4D18AA8486C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-kNNRealm_Tests-kNNRealm/Info.plist"; sourceTree = "<group>"; };
+		6F37F6C1E5F4582A7A064669 /* AllPass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AllPass.swift; path = Nimble/Matchers/AllPass.swift; sourceTree = "<group>"; };
+		76A00E7AF95A6D77860D59AD /* BeAKindOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeAKindOf.swift; path = Nimble/Matchers/BeAKindOf.swift; sourceTree = "<group>"; };
+		7C0ABCD18E150CF3BE2694DF /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		7CD25047D3E6564240351E71 /* kNNRealm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = kNNRealm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EA9739C495DFF7560262398 /* NMBExceptionCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMBExceptionCapture.m; path = Nimble/objc/NMBExceptionCapture.m; sourceTree = "<group>"; };
+		7F67BF208658CEB84FF6C737 /* Pods-kNNRealm_Tests-Nimble-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-kNNRealm_Tests-Nimble-prefix.pch"; sourceTree = "<group>"; };
+		7FA7217FD589216CD1E55710 /* Pods-kNNRealm_Tests-Nimble-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-kNNRealm_Tests-Nimble-umbrella.h"; sourceTree = "<group>"; };
+		7FC0980F4A74B23DA2E1FEF9 /* NSString+QCKSelectorName.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+QCKSelectorName.m"; path = "Quick/NSString+QCKSelectorName.m"; sourceTree = "<group>"; };
+		81258E0E17CA345E77B702E2 /* EndWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EndWith.swift; path = Nimble/Matchers/EndWith.swift; sourceTree = "<group>"; };
+		82342A5B7AD5EC21CA9BFE3C /* Pods-kNNRealm_Example-kNNRealm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-kNNRealm_Example-kNNRealm-dummy.m"; sourceTree = "<group>"; };
+		82A566585577B0D7A155E409 /* Pods-kNNRealm_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kNNRealm_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		84EFD311F7C7ED2C9DDFF5C4 /* Pods-kNNRealm_Example-kNNRealm.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kNNRealm_Example-kNNRealm.xcconfig"; sourceTree = "<group>"; };
+		8511D51CB010E50975F41E1D /* Pods-kNNRealm_Tests-Quick.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kNNRealm_Tests-Quick.xcconfig"; sourceTree = "<group>"; };
+		86C1B1DA79986CE83578ACB7 /* Pods-kNNRealm_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-kNNRealm_Example-environment.h"; sourceTree = "<group>"; };
+		885D26671FFB1C07CAAAB7E1 /* World.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = World.swift; path = Quick/World.swift; sourceTree = "<group>"; };
+		8E65977E3D38E49DBA5DD2B1 /* Pods-kNNRealm_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kNNRealm_Example-resources.sh"; sourceTree = "<group>"; };
+		8F1B7609703EE20C2A073036 /* Pods-kNNRealm_Tests-Quick-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-kNNRealm_Tests-Quick-dummy.m"; sourceTree = "<group>"; };
+		8F61884CF9554B62319D7ECD /* Callsite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Callsite.swift; path = Quick/Callsite.swift; sourceTree = "<group>"; };
+		90E0FB69EB21E6D6E38C3B7F /* BeLessThanOrEqual.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLessThanOrEqual.swift; path = Nimble/Matchers/BeLessThanOrEqual.swift; sourceTree = "<group>"; };
+		912652AA6FC36701ADA78E37 /* Pods-kNNRealm_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-kNNRealm_Tests-umbrella.h"; sourceTree = "<group>"; };
+		91A53A1E29606C9CE092B688 /* Pods-kNNRealm_Tests-kNNRealm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-kNNRealm_Tests-kNNRealm-dummy.m"; path = "../Pods-kNNRealm_Tests-kNNRealm/Pods-kNNRealm_Tests-kNNRealm-dummy.m"; sourceTree = "<group>"; };
+		94A967C306173A73442B3DC0 /* QCKDSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QCKDSL.h; path = Quick/DSL/QCKDSL.h; sourceTree = "<group>"; };
+		971E0D27463A7E788CCD69E6 /* Example.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Example.swift; path = Quick/Example.swift; sourceTree = "<group>"; };
+		97C33DBE90F0D97A1E5489AE /* ObjCMatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjCMatcher.swift; path = Nimble/Wrappers/ObjCMatcher.swift; sourceTree = "<group>"; };
+		9C3CAB99EA458490A2CF0EB2 /* Pods-kNNRealm_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kNNRealm_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9FC8CD4BE48D9E07974F2E66 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FFE295DF84D2A9AADC43D2C /* Pods-kNNRealm_Tests-kNNRealm-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-kNNRealm_Tests-kNNRealm-umbrella.h"; path = "../Pods-kNNRealm_Tests-kNNRealm/Pods-kNNRealm_Tests-kNNRealm-umbrella.h"; sourceTree = "<group>"; };
+		A0A56F5CEB42AD9E76DE3652 /* NMBExceptionCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMBExceptionCapture.h; path = Nimble/objc/NMBExceptionCapture.h; sourceTree = "<group>"; };
+		A41E3BBAC535E0B6DF8A0D15 /* Pods-kNNRealm_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-kNNRealm_Tests-dummy.m"; sourceTree = "<group>"; };
+		A4A00DE3CF647AD9A7A970C1 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A4E9B07A217E0C22AB8D19C4 /* Failure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Failure.swift; path = Quick/Failure.swift; sourceTree = "<group>"; };
+		A864BDF0A275717D1E99CD0C /* kNNRealm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = kNNRealm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A934C2FE28E2DE0048AF645B /* DSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSL.h; path = Nimble/objc/DSL.h; sourceTree = "<group>"; };
+		ABF0B5260A8DFA8855319B7A /* Pods-kNNRealm_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-kNNRealm_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AC08CC6CC3379D72E0674BE3 /* BasicMatcherWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasicMatcherWrapper.swift; path = Nimble/Wrappers/BasicMatcherWrapper.swift; sourceTree = "<group>"; };
+		ADA5170F19D02018CA10DBC0 /* Expectation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expectation.swift; path = Nimble/Expectation.swift; sourceTree = "<group>"; };
+		AF8F63E1D7861FCBD921D8B1 /* Pods_kNNRealm_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kNNRealm_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B11A1A78B53EC1C6E278A0B4 /* BeEmpty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeEmpty.swift; path = Nimble/Matchers/BeEmpty.swift; sourceTree = "<group>"; };
+		B27A0BF4B32A0FE4700A1CEC /* Pods-kNNRealm_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-kNNRealm_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B8D8B3C3FBEFF39F068E8F42 /* Equal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Equal.swift; path = Nimble/Matchers/Equal.swift; sourceTree = "<group>"; };
+		B94F35C55BB5D9A8E65615C9 /* FailureMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FailureMessage.swift; path = Nimble/FailureMessage.swift; sourceTree = "<group>"; };
+		B99B4BF833C8B1C022C92AC4 /* QuickSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickSpec.h; path = Quick/QuickSpec.h; sourceTree = "<group>"; };
+		BDF134CB3FBF8FFF4004ECCC /* BeGreaterThan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeGreaterThan.swift; path = Nimble/Matchers/BeGreaterThan.swift; sourceTree = "<group>"; };
+		BF16C3DA8A603328F01EEA99 /* Pods-kNNRealm_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kNNRealm_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C0A2213930BB01939AC44AC9 /* NonNilMatcherWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NonNilMatcherWrapper.swift; path = Nimble/Wrappers/NonNilMatcherWrapper.swift; sourceTree = "<group>"; };
+		C3FDBDDE5CCF4F43156ED92B /* ExampleHooks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleHooks.swift; path = Quick/Hooks/ExampleHooks.swift; sourceTree = "<group>"; };
+		C7548294B295B13BD856FB23 /* Pods-kNNRealm_Tests-Nimble-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-kNNRealm_Tests-Nimble-dummy.m"; sourceTree = "<group>"; };
+		CA0EADC5B743F75296015B9A /* kNNRealm.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kNNRealm.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC56FA2317402541A818F29E /* NimbleXCTestHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NimbleXCTestHandler.swift; path = Nimble/Adapters/NimbleXCTestHandler.swift; sourceTree = "<group>"; };
+		CFF5BDB669B3858F2B32CDCD /* Pods-kNNRealm_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kNNRealm_Tests-resources.sh"; sourceTree = "<group>"; };
+		D2376D107B44FEFFEE89B9EB /* Pods-kNNRealm_Tests-Quick.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-kNNRealm_Tests-Quick.modulemap"; sourceTree = "<group>"; };
+		D2CBEC4C8C8888EFB7187424 /* MatcherProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherProtocols.swift; path = Nimble/Matchers/MatcherProtocols.swift; sourceTree = "<group>"; };
+		D583756627B12FE566E15901 /* kNNRealm.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kNNRealm.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6DE57DF516995E40AD50B32 /* Pods-kNNRealm_Example-kNNRealm-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kNNRealm_Example-kNNRealm-Private.xcconfig"; sourceTree = "<group>"; };
+		D707C773D607D59B90C62A90 /* Pods-kNNRealm_Example-kNNRealm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-kNNRealm_Example-kNNRealm.modulemap"; sourceTree = "<group>"; };
+		DF3DB8DEFDCCD5043739CDF3 /* Pods-kNNRealm_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kNNRealm_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E634D7F9E6CF3F5BE3491EFA /* SuiteHooks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SuiteHooks.swift; path = Quick/Hooks/SuiteHooks.swift; sourceTree = "<group>"; };
+		E8D11580443DE3253D80F319 /* DSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSL.m; path = Nimble/objc/DSL.m; sourceTree = "<group>"; };
+		E8D3082C669E128DCEA0C8EC /* BeGreaterThanOrEqualTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeGreaterThanOrEqualTo.swift; path = Nimble/Matchers/BeGreaterThanOrEqualTo.swift; sourceTree = "<group>"; };
+		E9CD9F60836FB1BC856D9313 /* FullMatcherWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FullMatcherWrapper.swift; path = Nimble/Wrappers/FullMatcherWrapper.swift; sourceTree = "<group>"; };
+		EC7AB9A5A6978F49BFAAEC48 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Quick/Configuration/Configuration.swift; sourceTree = "<group>"; };
+		EEA1668698BD90981F7915D5 /* Pods-kNNRealm_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-kNNRealm_Tests.modulemap"; sourceTree = "<group>"; };
+		EF7C61E9D1C950A5BCB29A04 /* Match.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Match.swift; path = Nimble/Matchers/Match.swift; sourceTree = "<group>"; };
+		F27EC6A0B3858373DD53FE2A /* Pods-kNNRealm_Tests-Quick-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-kNNRealm_Tests-Quick-umbrella.h"; sourceTree = "<group>"; };
+		F3474AFF8A959E73FCEDAE3B /* World+DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "World+DSL.swift"; path = "Quick/DSL/World+DSL.swift"; sourceTree = "<group>"; };
+		F5D8450565E7A8CD87F34E35 /* QuickConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickConfiguration.h; path = Quick/Configuration/QuickConfiguration.h; sourceTree = "<group>"; };
+		F8211676D50735749BEC1C94 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F9B966B4FB36296F3E93FE7B /* Pods-kNNRealm_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-kNNRealm_Example.modulemap"; sourceTree = "<group>"; };
+		FB2C7D759F616604EB17A15F /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB45CDB3C01B34538B2CB2C3 /* DSL+Wait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DSL+Wait.swift"; path = "Nimble/DSL+Wait.swift"; sourceTree = "<group>"; };
+		FB45D271AE4DC489B3286542 /* BeLogical.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLogical.swift; path = Nimble/Matchers/BeLogical.swift; sourceTree = "<group>"; };
+		FBB982D1120CF065DA03DB3B /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06AD32946B5D095F9FC93F67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06D9A4BC48EE49FC42CD1169 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F83189F7E263DECFFED58133 /* Foundation.framework in Frameworks */,
+				FCE1A1D5BB6F99188367458C /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CFAB4AB096716F057605ACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				433C6125DB8AEFA7EF44E644 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FBE6EFDD0F51B813B58A89E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		675EC250BA851980F215250B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF747314EF03FC02E4C3BCDB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A3395619EC9AF6A0AEB4484 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B09B648C205F5DDD7EF1264E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8713F34CE85994315F839A7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8ABF5EB69B1212AC0C1E369 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DB76559BD877FE9F8F8C0E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				972AB8E3057D06BCBD63BA8B /* Foundation.framework in Frameworks */,
+				09DBD978D83AD705F09592C6 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		029870FF480E8188CD0412B9 = {
+			isa = PBXGroup;
+			children = (
+				A4A00DE3CF647AD9A7A970C1 /* Podfile */,
+				40846266DC61292348DC6569 /* Development Pods */,
+				03A3B33625F4CE29CD523982 /* Frameworks */,
+				5F3D84FE63EB1889A1680D2C /* Pods */,
+				419495CF057EBE09AB38DE65 /* Products */,
+				F650E5774AD46DCAF8A795C1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		03A3B33625F4CE29CD523982 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBF287B7BA0D473FAB357BE3 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A0E854FB5E225971B6A99AB /* Pods-kNNRealm_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9FC8CD4BE48D9E07974F2E66 /* Info.plist */,
+				EEA1668698BD90981F7915D5 /* Pods-kNNRealm_Tests.modulemap */,
+				B27A0BF4B32A0FE4700A1CEC /* Pods-kNNRealm_Tests-acknowledgements.markdown */,
+				47A54BF5A3B7E5A45707D427 /* Pods-kNNRealm_Tests-acknowledgements.plist */,
+				A41E3BBAC535E0B6DF8A0D15 /* Pods-kNNRealm_Tests-dummy.m */,
+				2894F4C6692269DA3E4CFCAE /* Pods-kNNRealm_Tests-environment.h */,
+				1F53C7176593CDF6C2D9F64A /* Pods-kNNRealm_Tests-frameworks.sh */,
+				CFF5BDB669B3858F2B32CDCD /* Pods-kNNRealm_Tests-resources.sh */,
+				912652AA6FC36701ADA78E37 /* Pods-kNNRealm_Tests-umbrella.h */,
+				DF3DB8DEFDCCD5043739CDF3 /* Pods-kNNRealm_Tests.debug.xcconfig */,
+				326F1BD763D8F9847693CAA2 /* Pods-kNNRealm_Tests.release.xcconfig */,
+			);
+			name = "Pods-kNNRealm_Tests";
+			path = "Target Support Files/Pods-kNNRealm_Tests";
+			sourceTree = "<group>";
+		};
+		21C40B6DCD40F6D4B3BF913A /* Nimble */ = {
+			isa = PBXGroup;
+			children = (
+				38F7529CA047CF2150BA3ED2 /* AdapterProtocols.swift */,
+				6F37F6C1E5F4582A7A064669 /* AllPass.swift */,
+				509A9536CAC3A8E4BECFF7D1 /* AssertionRecorder.swift */,
+				631B970584C605CAD04112CC /* AsyncMatcherWrapper.swift */,
+				AC08CC6CC3379D72E0674BE3 /* BasicMatcherWrapper.swift */,
+				76A00E7AF95A6D77860D59AD /* BeAKindOf.swift */,
+				04383991969B61CFD406D28F /* BeAnInstanceOf.swift */,
+				023BB888187D829C6EF03987 /* BeCloseTo.swift */,
+				B11A1A78B53EC1C6E278A0B4 /* BeEmpty.swift */,
+				BDF134CB3FBF8FFF4004ECCC /* BeGreaterThan.swift */,
+				E8D3082C669E128DCEA0C8EC /* BeGreaterThanOrEqualTo.swift */,
+				01E3AC7EA6B77EFD1EDA0D30 /* BeIdenticalTo.swift */,
+				2967D65CAC048237E08FF38C /* BeLessThan.swift */,
+				90E0FB69EB21E6D6E38C3B7F /* BeLessThanOrEqual.swift */,
+				FB45D271AE4DC489B3286542 /* BeLogical.swift */,
+				0E72E344CE22F4A86A0CB80D /* BeNil.swift */,
+				12B2CB79FDDC636CD27FA70C /* BeginWith.swift */,
+				5DCAC5D4ABA05000C10DF51E /* Contain.swift */,
+				A934C2FE28E2DE0048AF645B /* DSL.h */,
+				E8D11580443DE3253D80F319 /* DSL.m */,
+				25917AC3B7BE0D80CB1CEFE5 /* DSL.swift */,
+				FB45CDB3C01B34538B2CB2C3 /* DSL+Wait.swift */,
+				81258E0E17CA345E77B702E2 /* EndWith.swift */,
+				B8D8B3C3FBEFF39F068E8F42 /* Equal.swift */,
+				ADA5170F19D02018CA10DBC0 /* Expectation.swift */,
+				5A89D88CC48544C6A8585CB9 /* Expression.swift */,
+				B94F35C55BB5D9A8E65615C9 /* FailureMessage.swift */,
+				E9CD9F60836FB1BC856D9313 /* FullMatcherWrapper.swift */,
+				1A2D20A5F2319B59EED92699 /* Functional.swift */,
+				EF7C61E9D1C950A5BCB29A04 /* Match.swift */,
+				5DEA6EF098939BA09E1C6B31 /* MatcherFunc.swift */,
+				D2CBEC4C8C8888EFB7187424 /* MatcherProtocols.swift */,
+				A0A56F5CEB42AD9E76DE3652 /* NMBExceptionCapture.h */,
+				7EA9739C495DFF7560262398 /* NMBExceptionCapture.m */,
+				0F4A7F4CDE847AC6D45E2A51 /* Nimble.h */,
+				CC56FA2317402541A818F29E /* NimbleXCTestHandler.swift */,
+				C0A2213930BB01939AC44AC9 /* NonNilMatcherWrapper.swift */,
+				97C33DBE90F0D97A1E5489AE /* ObjCMatcher.swift */,
+				592A42CEB5F29D2939E51E4B /* Poll.swift */,
+				2769660E918C70EA0A292D84 /* RaisesException.swift */,
+				08183361A7349B1CB002C19F /* SourceLocation.swift */,
+				3F8FF74875F5D218F070B6F7 /* Stringers.swift */,
+				587B832CF9286DD978121BF6 /* Support Files */,
+			);
+			path = Nimble;
+			sourceTree = "<group>";
+		};
+		31C55E8BA85DA5CD13DFAB4E /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				C370A9E2AF55060D3CE39282 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		40846266DC61292348DC6569 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4FD1BAC4BA0079C76EDE1F3 /* kNNRealm */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		419495CF057EBE09AB38DE65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBB982D1120CF065DA03DB3B /* Nimble.framework */,
+				AF8F63E1D7861FCBD921D8B1 /* Pods_kNNRealm_Example.framework */,
+				66263E6BEA0185FBA8138927 /* Pods_kNNRealm_Tests.framework */,
+				FB2C7D759F616604EB17A15F /* Quick.framework */,
+				CA0EADC5B743F75296015B9A /* kNNRealm.bundle */,
+				D583756627B12FE566E15901 /* kNNRealm.bundle */,
+				A864BDF0A275717D1E99CD0C /* kNNRealm.framework */,
+				7CD25047D3E6564240351E71 /* kNNRealm.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43EC417E129722D0C62BC1B6 /* Pods-kNNRealm_Example */ = {
+			isa = PBXGroup;
+			children = (
+				37F7CABA4E6B21B0522B564B /* Info.plist */,
+				F9B966B4FB36296F3E93FE7B /* Pods-kNNRealm_Example.modulemap */,
+				ABF0B5260A8DFA8855319B7A /* Pods-kNNRealm_Example-acknowledgements.markdown */,
+				82A566585577B0D7A155E409 /* Pods-kNNRealm_Example-acknowledgements.plist */,
+				04F6286C8B9C6D36A82E10AD /* Pods-kNNRealm_Example-dummy.m */,
+				86C1B1DA79986CE83578ACB7 /* Pods-kNNRealm_Example-environment.h */,
+				413469CB622E25948C1267F1 /* Pods-kNNRealm_Example-frameworks.sh */,
+				8E65977E3D38E49DBA5DD2B1 /* Pods-kNNRealm_Example-resources.sh */,
+				3761BB9A3691EAC38A182503 /* Pods-kNNRealm_Example-umbrella.h */,
+				9C3CAB99EA458490A2CF0EB2 /* Pods-kNNRealm_Example.debug.xcconfig */,
+				BF16C3DA8A603328F01EEA99 /* Pods-kNNRealm_Example.release.xcconfig */,
+			);
+			name = "Pods-kNNRealm_Example";
+			path = "Target Support Files/Pods-kNNRealm_Example";
+			sourceTree = "<group>";
+		};
+		587B832CF9286DD978121BF6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				370DB69D6611CC689F7B4195 /* Info.plist */,
+				1EAF92E1C7CFAB5C46DFEA77 /* Pods-kNNRealm_Tests-Nimble.modulemap */,
+				5D94928E9BA361D18122E183 /* Pods-kNNRealm_Tests-Nimble.xcconfig */,
+				14311A155DA199B4417A57CD /* Pods-kNNRealm_Tests-Nimble-Private.xcconfig */,
+				C7548294B295B13BD856FB23 /* Pods-kNNRealm_Tests-Nimble-dummy.m */,
+				7F67BF208658CEB84FF6C737 /* Pods-kNNRealm_Tests-Nimble-prefix.pch */,
+				7FA7217FD589216CD1E55710 /* Pods-kNNRealm_Tests-Nimble-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-kNNRealm_Tests-Nimble";
+			sourceTree = "<group>";
+		};
+		5F3D84FE63EB1889A1680D2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21C40B6DCD40F6D4B3BF913A /* Nimble */,
+				61BB4E023AF18064D23CF043 /* Quick */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		61BB4E023AF18064D23CF043 /* Quick */ = {
+			isa = PBXGroup;
+			children = (
+				8F61884CF9554B62319D7ECD /* Callsite.swift */,
+				17DB23B00B76DC5418BF540B /* Closures.swift */,
+				EC7AB9A5A6978F49BFAAEC48 /* Configuration.swift */,
+				50A42BD39F5DF3F8B3D3A1C5 /* DSL.swift */,
+				971E0D27463A7E788CCD69E6 /* Example.swift */,
+				0E37A746B4FD26AAF9E6F983 /* ExampleGroup.swift */,
+				C3FDBDDE5CCF4F43156ED92B /* ExampleHooks.swift */,
+				61F1B08144D3FAB1DE7E8F03 /* ExampleMetadata.swift */,
+				A4E9B07A217E0C22AB8D19C4 /* Failure.swift */,
+				28B7D6D634FAA9F07BBEC429 /* Filter.swift */,
+				3FAC8AB05F6561F87DFB3185 /* NSString+QCKSelectorName.h */,
+				7FC0980F4A74B23DA2E1FEF9 /* NSString+QCKSelectorName.m */,
+				94A967C306173A73442B3DC0 /* QCKDSL.h */,
+				4C6B2338837F19AF25FED007 /* QCKDSL.m */,
+				46BA56DD7C1479F0E418A50A /* Quick.h */,
+				F5D8450565E7A8CD87F34E35 /* QuickConfiguration.h */,
+				5C3E41AD56EAD2F62CFCAC2A /* QuickConfiguration.m */,
+				B99B4BF833C8B1C022C92AC4 /* QuickSpec.h */,
+				58FC13CFC835F8BAF34C8309 /* QuickSpec.m */,
+				E634D7F9E6CF3F5BE3491EFA /* SuiteHooks.swift */,
+				885D26671FFB1C07CAAAB7E1 /* World.swift */,
+				F3474AFF8A959E73FCEDAE3B /* World+DSL.swift */,
+				A5E45DD37E46EF06E2CFA29A /* Support Files */,
+			);
+			path = Quick;
+			sourceTree = "<group>";
+		};
+		A5E45DD37E46EF06E2CFA29A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F01541E276687EF2247BADC /* Info.plist */,
+				D2376D107B44FEFFEE89B9EB /* Pods-kNNRealm_Tests-Quick.modulemap */,
+				8511D51CB010E50975F41E1D /* Pods-kNNRealm_Tests-Quick.xcconfig */,
+				1F0F72F167A507E883E1CB4E /* Pods-kNNRealm_Tests-Quick-Private.xcconfig */,
+				8F1B7609703EE20C2A073036 /* Pods-kNNRealm_Tests-Quick-dummy.m */,
+				490BE90A88118AF67F5EC0C4 /* Pods-kNNRealm_Tests-Quick-prefix.pch */,
+				F27EC6A0B3858373DD53FE2A /* Pods-kNNRealm_Tests-Quick-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-kNNRealm_Tests-Quick";
+			sourceTree = "<group>";
+		};
+		A9FA7A5F83D49BB67E23B9A4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D5DF681229033CE5A3CAB74 /* Info.plist */,
+				6B9FD00F1F23F4D18AA8486C /* Info.plist */,
+				D707C773D607D59B90C62A90 /* Pods-kNNRealm_Example-kNNRealm.modulemap */,
+				84EFD311F7C7ED2C9DDFF5C4 /* Pods-kNNRealm_Example-kNNRealm.xcconfig */,
+				D6DE57DF516995E40AD50B32 /* Pods-kNNRealm_Example-kNNRealm-Private.xcconfig */,
+				82342A5B7AD5EC21CA9BFE3C /* Pods-kNNRealm_Example-kNNRealm-dummy.m */,
+				11B1C814B2D482FFD3FC3C99 /* Pods-kNNRealm_Example-kNNRealm-prefix.pch */,
+				53A78BBF25E79EDC2E0F5C76 /* Pods-kNNRealm_Example-kNNRealm-umbrella.h */,
+				4520FBA32450DB1D39144BFC /* Pods-kNNRealm_Tests-kNNRealm.modulemap */,
+				527ED385CACE77C36F41BEF7 /* Pods-kNNRealm_Tests-kNNRealm.xcconfig */,
+				241388C00092AA48E91EA174 /* Pods-kNNRealm_Tests-kNNRealm-Private.xcconfig */,
+				91A53A1E29606C9CE092B688 /* Pods-kNNRealm_Tests-kNNRealm-dummy.m */,
+				177354B918610CC8A14EED7A /* Pods-kNNRealm_Tests-kNNRealm-prefix.pch */,
+				9FFE295DF84D2A9AADC43D2C /* Pods-kNNRealm_Tests-kNNRealm-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-kNNRealm_Example-kNNRealm";
+			sourceTree = "<group>";
+		};
+		BBF287B7BA0D473FAB357BE3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F8211676D50735749BEC1C94 /* Foundation.framework */,
+				4B474434C724B4810093C610 /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C370A9E2AF55060D3CE39282 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7C0ABCD18E150CF3BE2694DF /* ReplaceMe.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F4FD1BAC4BA0079C76EDE1F3 /* kNNRealm */ = {
+			isa = PBXGroup;
+			children = (
+				31C55E8BA85DA5CD13DFAB4E /* Pod */,
+				A9FA7A5F83D49BB67E23B9A4 /* Support Files */,
+			);
+			name = kNNRealm;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		F650E5774AD46DCAF8A795C1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				43EC417E129722D0C62BC1B6 /* Pods-kNNRealm_Example */,
+				1A0E854FB5E225971B6A99AB /* Pods-kNNRealm_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0DFA3D859161A565A2608199 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEDF3CA8CA1C2CC911B5BB8D /* Pods-kNNRealm_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18182F5FA0426A020359AC50 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C5E322C2BE4001E89EE5896 /* Pods-kNNRealm_Example-kNNRealm-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2869B556EF5B8358FF5FE793 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				084F6CB7992CE00129BCC4CF /* Pods-kNNRealm_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A0FADB5E66B6562CAC8AF48 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6E127889BFA885DA6191B6F /* NSString+QCKSelectorName.h in Headers */,
+				6407E6BBD6A8E13ED03F38E7 /* Pods-kNNRealm_Tests-Quick-umbrella.h in Headers */,
+				CA6B2161D2BA1C6A6E808081 /* QCKDSL.h in Headers */,
+				BFE26D2C28A711D4A75A907E /* Quick.h in Headers */,
+				9C86FE7DD2A0EC741CD9EDE8 /* QuickConfiguration.h in Headers */,
+				B4C67F90D91E4756D41A165A /* QuickSpec.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50AF3BFEC77B938EA559E417 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3BA4F610A7728A2262A776C /* Pods-kNNRealm_Tests-kNNRealm-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D57BC0E545D2B504A39082A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D25E71985ED3DE93BF5D62D /* DSL.h in Headers */,
+				B6109CB1EC29713BFA1C63A7 /* NMBExceptionCapture.h in Headers */,
+				35175CA062E9EFB1F5B9B8BC /* Nimble.h in Headers */,
+				5DBA8EB4F58713D1D92E88F8 /* Pods-kNNRealm_Tests-Nimble-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0DD2388BA61F7CC07BB71E0C /* Pods-kNNRealm_Tests-kNNRealm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB70228857C28A873AE9A74F /* Build configuration list for PBXNativeTarget "Pods-kNNRealm_Tests-kNNRealm" */;
+			buildPhases = (
+				20717F9DD699E88B50881F75 /* Sources */,
+				8713F34CE85994315F839A7E /* Frameworks */,
+				19696BFD8D86045B53CB61F9 /* Resources */,
+				50AF3BFEC77B938EA559E417 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6DAD651071FB1A3C5B7D50D /* PBXTargetDependency */,
+			);
+			name = "Pods-kNNRealm_Tests-kNNRealm";
+			productName = "Pods-kNNRealm_Tests-kNNRealm";
+			productReference = A864BDF0A275717D1E99CD0C /* kNNRealm.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		101A75B7EB813DA82E58FBE8 /* Pods-kNNRealm_Tests-kNNRealm-kNNRealm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA0F3F8D29ACA321AD41BB48 /* Build configuration list for PBXNativeTarget "Pods-kNNRealm_Tests-kNNRealm-kNNRealm" */;
+			buildPhases = (
+				A02895746BCD755F9CD10E36 /* Sources */,
+				2FBE6EFDD0F51B813B58A89E /* Frameworks */,
+				C5464E3D180264B9D1CCA7FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-kNNRealm_Tests-kNNRealm-kNNRealm";
+			productName = "Pods-kNNRealm_Tests-kNNRealm-kNNRealm";
+			productReference = CA0EADC5B743F75296015B9A /* kNNRealm.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		170CDF2EA5EE32C230574F66 /* Pods-kNNRealm_Tests-Quick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46A67D1AB4D4A1B80DC987A4 /* Build configuration list for PBXNativeTarget "Pods-kNNRealm_Tests-Quick" */;
+			buildPhases = (
+				80D7F6AC8A85DFB5684B9288 /* Sources */,
+				8DB76559BD877FE9F8F8C0E5 /* Frameworks */,
+				4A0FADB5E66B6562CAC8AF48 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-kNNRealm_Tests-Quick";
+			productName = "Pods-kNNRealm_Tests-Quick";
+			productReference = FB2C7D759F616604EB17A15F /* Quick.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6B502BD2AA6C7EA0EA2E5512 /* Pods-kNNRealm_Example-kNNRealm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4C2C7E40ACC9636F263E7DA /* Build configuration list for PBXNativeTarget "Pods-kNNRealm_Example-kNNRealm" */;
+			buildPhases = (
+				BB090E15E7C20454BF962273 /* Sources */,
+				675EC250BA851980F215250B /* Frameworks */,
+				94F18F8F9A53F84E66F09B77 /* Resources */,
+				18182F5FA0426A020359AC50 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3D917016EB045CAB6F8D5F9 /* PBXTargetDependency */,
+			);
+			name = "Pods-kNNRealm_Example-kNNRealm";
+			productName = "Pods-kNNRealm_Example-kNNRealm";
+			productReference = 7CD25047D3E6564240351E71 /* kNNRealm.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6C4AE5D68F9B49396B591A7B /* Pods-kNNRealm_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 066F1A5A7E6B7A28D09798FC /* Build configuration list for PBXNativeTarget "Pods-kNNRealm_Example" */;
+			buildPhases = (
+				FA4E11D4621FC664A3ED9716 /* Sources */,
+				2CFAB4AB096716F057605ACD /* Frameworks */,
+				0DFA3D859161A565A2608199 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9DDF8C72117BD6BD6F8077C /* PBXTargetDependency */,
+			);
+			name = "Pods-kNNRealm_Example";
+			productName = "Pods-kNNRealm_Example";
+			productReference = AF8F63E1D7861FCBD921D8B1 /* Pods_kNNRealm_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6E690203ACA30E79EC8BA67E /* Pods-kNNRealm_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E91F69CC365960187CF922DD /* Build configuration list for PBXNativeTarget "Pods-kNNRealm_Tests" */;
+			buildPhases = (
+				841576379A7037EC770C71EB /* Sources */,
+				7A3395619EC9AF6A0AEB4484 /* Frameworks */,
+				2869B556EF5B8358FF5FE793 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE083CEAE54B005FB0DCC37A /* PBXTargetDependency */,
+				D119D61A021D6FF40A4FDDAC /* PBXTargetDependency */,
+				D0D81F7BD57A143E946FC301 /* PBXTargetDependency */,
+			);
+			name = "Pods-kNNRealm_Tests";
+			productName = "Pods-kNNRealm_Tests";
+			productReference = 66263E6BEA0185FBA8138927 /* Pods_kNNRealm_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		872D8223948431E2885EB21D /* Pods-kNNRealm_Example-kNNRealm-kNNRealm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFAF7009C56632CFD7244CD8 /* Build configuration list for PBXNativeTarget "Pods-kNNRealm_Example-kNNRealm-kNNRealm" */;
+			buildPhases = (
+				C404BBC4E94BF757B785D14B /* Sources */,
+				06AD32946B5D095F9FC93F67 /* Frameworks */,
+				94F0E02831BAB98335888929 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-kNNRealm_Example-kNNRealm-kNNRealm";
+			productName = "Pods-kNNRealm_Example-kNNRealm-kNNRealm";
+			productReference = D583756627B12FE566E15901 /* kNNRealm.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		D8A2816956D177185694F5BA /* Pods-kNNRealm_Tests-Nimble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A01853434FD3B0F3C2D2CC3 /* Build configuration list for PBXNativeTarget "Pods-kNNRealm_Tests-Nimble" */;
+			buildPhases = (
+				225857266ED7233A05E312B2 /* Sources */,
+				06D9A4BC48EE49FC42CD1169 /* Frameworks */,
+				7D57BC0E545D2B504A39082A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-kNNRealm_Tests-Nimble";
+			productName = "Pods-kNNRealm_Tests-Nimble";
+			productReference = FBB982D1120CF065DA03DB3B /* Nimble.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5EC8E5663085763F13D95E11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 19882CFE806C46492AC19E75 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 029870FF480E8188CD0412B9;
+			productRefGroup = 419495CF057EBE09AB38DE65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C4AE5D68F9B49396B591A7B /* Pods-kNNRealm_Example */,
+				6B502BD2AA6C7EA0EA2E5512 /* Pods-kNNRealm_Example-kNNRealm */,
+				872D8223948431E2885EB21D /* Pods-kNNRealm_Example-kNNRealm-kNNRealm */,
+				6E690203ACA30E79EC8BA67E /* Pods-kNNRealm_Tests */,
+				D8A2816956D177185694F5BA /* Pods-kNNRealm_Tests-Nimble */,
+				170CDF2EA5EE32C230574F66 /* Pods-kNNRealm_Tests-Quick */,
+				0DD2388BA61F7CC07BB71E0C /* Pods-kNNRealm_Tests-kNNRealm */,
+				101A75B7EB813DA82E58FBE8 /* Pods-kNNRealm_Tests-kNNRealm-kNNRealm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19696BFD8D86045B53CB61F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF7F8A3E3E21357D299014E8 /* kNNRealm.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94F0E02831BAB98335888929 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94F18F8F9A53F84E66F09B77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22BD2B15D0234F0431A0059A /* kNNRealm.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5464E3D180264B9D1CCA7FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20717F9DD699E88B50881F75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46C297D6F14E1F72FCA16B95 /* Pods-kNNRealm_Tests-kNNRealm-dummy.m in Sources */,
+				81210A9B2E38B2412C1B2BEF /* ReplaceMe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		225857266ED7233A05E312B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F0042EFC6FB6434FA184F1A /* AdapterProtocols.swift in Sources */,
+				CFB427ACA5814DD5AC9EDF0B /* AllPass.swift in Sources */,
+				BB433EE0E8F7D63F4C3B016B /* AssertionRecorder.swift in Sources */,
+				AE3E4439A63534B705FDBA9A /* AsyncMatcherWrapper.swift in Sources */,
+				89E3F52A2E80C114FC368B3E /* BasicMatcherWrapper.swift in Sources */,
+				63B18B390495746FB13FF5E0 /* BeAKindOf.swift in Sources */,
+				BE3066DBA314757A3BF9D4D5 /* BeAnInstanceOf.swift in Sources */,
+				76BA5C1F17B282AF6E620D6D /* BeCloseTo.swift in Sources */,
+				CEF155370CC481AF83C5FCC4 /* BeEmpty.swift in Sources */,
+				1DFC86A99D8228BF0CCCEB7B /* BeGreaterThan.swift in Sources */,
+				B09B60FA43A48E5C4D545725 /* BeGreaterThanOrEqualTo.swift in Sources */,
+				5B8FB6A2145C62BBE8DAB95B /* BeIdenticalTo.swift in Sources */,
+				7AD85D33540D2DD922A11100 /* BeLessThan.swift in Sources */,
+				A3F87612E9EECA943DCE1F5A /* BeLessThanOrEqual.swift in Sources */,
+				4164AFD9FCA85F8AAAA5F83E /* BeLogical.swift in Sources */,
+				977BFC657B3110915072C596 /* BeNil.swift in Sources */,
+				869698112C6F8FC622A195DC /* BeginWith.swift in Sources */,
+				F3F969A003DB37A917639C8E /* Contain.swift in Sources */,
+				50055ED8D202E0114B1A19B7 /* DSL+Wait.swift in Sources */,
+				D45E61443FA36A2F54C1577C /* DSL.m in Sources */,
+				46E6D7DC7C3C97F76653985E /* DSL.swift in Sources */,
+				0AE6C182E2E395EEC0CB7A5D /* EndWith.swift in Sources */,
+				A15B5C6AAB0DF790A1537066 /* Equal.swift in Sources */,
+				364EB3833BD73DD493B1E2D8 /* Expectation.swift in Sources */,
+				0D0E2A9E200686310A9ABA30 /* Expression.swift in Sources */,
+				F0F3EB91A4E01AB82A13D925 /* FailureMessage.swift in Sources */,
+				BD92EFBB8EECB4D76CAD9506 /* FullMatcherWrapper.swift in Sources */,
+				001504A3ED174EBFF54BCC41 /* Functional.swift in Sources */,
+				DBB64EC33E95CD09C1BCE7E5 /* Match.swift in Sources */,
+				B4F5E797E8C86D277D6A95E5 /* MatcherFunc.swift in Sources */,
+				D7B8A92EBD78D5F7B04F16DB /* MatcherProtocols.swift in Sources */,
+				9701A8F7AA4DB36712AB5114 /* NMBExceptionCapture.m in Sources */,
+				BBACE5FC0ED17A97C822C5BC /* NimbleXCTestHandler.swift in Sources */,
+				D281E1984F8F54A87606FA58 /* NonNilMatcherWrapper.swift in Sources */,
+				E15E3ED9394CC27EE83086F2 /* ObjCMatcher.swift in Sources */,
+				8AABE689F02B0BE616589CA9 /* Pods-kNNRealm_Tests-Nimble-dummy.m in Sources */,
+				9F527FB4584F6F4FDD741645 /* Poll.swift in Sources */,
+				AE99E3A78E5E9A06CA6A125B /* RaisesException.swift in Sources */,
+				00AE3BC6068B9B2BE9335CF9 /* SourceLocation.swift in Sources */,
+				89163A8F56CCC2A52B3A0A63 /* Stringers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80D7F6AC8A85DFB5684B9288 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8F43D180FE8BF6C9333C2B6 /* Callsite.swift in Sources */,
+				C18837F8BFA348C517E9D37F /* Closures.swift in Sources */,
+				7A74564AE251506690A8BC33 /* Configuration.swift in Sources */,
+				0E1C725625FF7BB4FB9DAB31 /* DSL.swift in Sources */,
+				21C0B55EBD47ECE803B6C8D0 /* Example.swift in Sources */,
+				4CD6CAF0510ED45A0C0CBD78 /* ExampleGroup.swift in Sources */,
+				E0215618BEF7843C93A67529 /* ExampleHooks.swift in Sources */,
+				E694E74ABBF669DEF16F5CF6 /* ExampleMetadata.swift in Sources */,
+				E179EF64580403087CC3377E /* Failure.swift in Sources */,
+				C2FD6847B75E8A06C5DFDF75 /* Filter.swift in Sources */,
+				6D7940D43F90C615270900C5 /* NSString+QCKSelectorName.m in Sources */,
+				07B76837A57804ED1B2C2318 /* Pods-kNNRealm_Tests-Quick-dummy.m in Sources */,
+				98F4740A03BA37DDC030C7DE /* QCKDSL.m in Sources */,
+				FA45522A7AEF015C2C167A82 /* QuickConfiguration.m in Sources */,
+				9EC82E25813B7141BC140847 /* QuickSpec.m in Sources */,
+				B0A82A2597CCE5BF36C9DDEF /* SuiteHooks.swift in Sources */,
+				2C12FB6ECC9E9CFC375FD61C /* World+DSL.swift in Sources */,
+				EBE4DAA6FC72386244A194EB /* World.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841576379A7037EC770C71EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D9B889D29A07A0E0F6E311 /* Pods-kNNRealm_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A02895746BCD755F9CD10E36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB090E15E7C20454BF962273 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				505E59948B5A882CCF1B66EB /* Pods-kNNRealm_Example-kNNRealm-dummy.m in Sources */,
+				8B775FD1A502C324BAB963FC /* ReplaceMe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C404BBC4E94BF757B785D14B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA4E11D4621FC664A3ED9716 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DA670D337C7F6E8EDC658B2 /* Pods-kNNRealm_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9DDF8C72117BD6BD6F8077C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-kNNRealm_Example-kNNRealm";
+			target = 6B502BD2AA6C7EA0EA2E5512 /* Pods-kNNRealm_Example-kNNRealm */;
+			targetProxy = A535A85100F9B147EB0ECC1B /* PBXContainerItemProxy */;
+		};
+		C3D917016EB045CAB6F8D5F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-kNNRealm_Example-kNNRealm-kNNRealm";
+			target = 872D8223948431E2885EB21D /* Pods-kNNRealm_Example-kNNRealm-kNNRealm */;
+			targetProxy = 162E58C1CC4D3E0556DB1617 /* PBXContainerItemProxy */;
+		};
+		C6DAD651071FB1A3C5B7D50D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-kNNRealm_Tests-kNNRealm-kNNRealm";
+			target = 101A75B7EB813DA82E58FBE8 /* Pods-kNNRealm_Tests-kNNRealm-kNNRealm */;
+			targetProxy = F6666BF11286EA4807A8C851 /* PBXContainerItemProxy */;
+		};
+		CE083CEAE54B005FB0DCC37A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-kNNRealm_Tests-Nimble";
+			target = D8A2816956D177185694F5BA /* Pods-kNNRealm_Tests-Nimble */;
+			targetProxy = 3F127EE1B6D1C3FD7B2B38D2 /* PBXContainerItemProxy */;
+		};
+		D0D81F7BD57A143E946FC301 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-kNNRealm_Tests-kNNRealm";
+			target = 0DD2388BA61F7CC07BB71E0C /* Pods-kNNRealm_Tests-kNNRealm */;
+			targetProxy = 70BCEF0E43A1CCC35C5DAECF /* PBXContainerItemProxy */;
+		};
+		D119D61A021D6FF40A4FDDAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-kNNRealm_Tests-Quick";
+			target = 170CDF2EA5EE32C230574F66 /* Pods-kNNRealm_Tests-Quick */;
+			targetProxy = 5802E5FC2A5D2A141CFAB30D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		14DDF0CDA512CF8D6EF1EEFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14311A155DA199B4417A57CD /* Pods-kNNRealm_Tests-Nimble-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-kNNRealm_Tests-Nimble/Pods-kNNRealm_Tests-Nimble-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-kNNRealm_Tests-Nimble/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-kNNRealm_Tests-Nimble/Pods-kNNRealm_Tests-Nimble.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Nimble;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		16368411F11C8C1168313AB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 241388C00092AA48E91EA174 /* Pods-kNNRealm_Tests-kNNRealm-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-kNNRealm_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = kNNRealm;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		2730A5ED9A218B8D13FB3BD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C3CAB99EA458490A2CF0EB2 /* Pods-kNNRealm_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-kNNRealm_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-kNNRealm_Example/Pods-kNNRealm_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_kNNRealm_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3A74AB519B7198EFD896C9C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 241388C00092AA48E91EA174 /* Pods-kNNRealm_Tests-kNNRealm-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-kNNRealm_Tests-kNNRealm/Pods-kNNRealm_Tests-kNNRealm-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-kNNRealm_Tests-kNNRealm/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-kNNRealm_Tests-kNNRealm/Pods-kNNRealm_Tests-kNNRealm.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = kNNRealm;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		46CBDD246B9B8C639CBE4F49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6DE57DF516995E40AD50B32 /* Pods-kNNRealm_Example-kNNRealm-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-kNNRealm_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = kNNRealm;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		4DA7DBC5E26662619C878971 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF16C3DA8A603328F01EEA99 /* Pods-kNNRealm_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-kNNRealm_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-kNNRealm_Example/Pods-kNNRealm_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_kNNRealm_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		528E7A2C3E259D750BCDFF26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		644DC490520CDCB6EF692AB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F0F72F167A507E883E1CB4E /* Pods-kNNRealm_Tests-Quick-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-kNNRealm_Tests-Quick/Pods-kNNRealm_Tests-Quick-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-kNNRealm_Tests-Quick/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-kNNRealm_Tests-Quick/Pods-kNNRealm_Tests-Quick.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Quick;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		751772587E0A7CFC13C1F55A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		775A8F1E9F187C36391DE9F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6DE57DF516995E40AD50B32 /* Pods-kNNRealm_Example-kNNRealm-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-kNNRealm_Example-kNNRealm/Pods-kNNRealm_Example-kNNRealm-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-kNNRealm_Example-kNNRealm/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-kNNRealm_Example-kNNRealm/Pods-kNNRealm_Example-kNNRealm.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = kNNRealm;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		792994F83AF07CEAAF943A41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F0F72F167A507E883E1CB4E /* Pods-kNNRealm_Tests-Quick-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-kNNRealm_Tests-Quick/Pods-kNNRealm_Tests-Quick-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-kNNRealm_Tests-Quick/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-kNNRealm_Tests-Quick/Pods-kNNRealm_Tests-Quick.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Quick;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		898D36D6E2089F48B91DE096 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 326F1BD763D8F9847693CAA2 /* Pods-kNNRealm_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-kNNRealm_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-kNNRealm_Tests/Pods-kNNRealm_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_kNNRealm_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A666B9A6DD7BA01F3C4FACDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 241388C00092AA48E91EA174 /* Pods-kNNRealm_Tests-kNNRealm-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-kNNRealm_Tests-kNNRealm/Pods-kNNRealm_Tests-kNNRealm-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-kNNRealm_Tests-kNNRealm/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-kNNRealm_Tests-kNNRealm/Pods-kNNRealm_Tests-kNNRealm.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = kNNRealm;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AED19549AE4CAB84FECA9B92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6DE57DF516995E40AD50B32 /* Pods-kNNRealm_Example-kNNRealm-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-kNNRealm_Example-kNNRealm/Pods-kNNRealm_Example-kNNRealm-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-kNNRealm_Example-kNNRealm/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-kNNRealm_Example-kNNRealm/Pods-kNNRealm_Example-kNNRealm.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = kNNRealm;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DA5EF1D3970247526EFB2B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 241388C00092AA48E91EA174 /* Pods-kNNRealm_Tests-kNNRealm-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-kNNRealm_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = kNNRealm;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		DE7AAB0E0B70A4BF4AEA1595 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14311A155DA199B4417A57CD /* Pods-kNNRealm_Tests-Nimble-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-kNNRealm_Tests-Nimble/Pods-kNNRealm_Tests-Nimble-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-kNNRealm_Tests-Nimble/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-kNNRealm_Tests-Nimble/Pods-kNNRealm_Tests-Nimble.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Nimble;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DEC98E0AFD8E6F5169475C5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF3DB8DEFDCCD5043739CDF3 /* Pods-kNNRealm_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-kNNRealm_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-kNNRealm_Tests/Pods-kNNRealm_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_kNNRealm_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FEA3F55A8296CF259B05B2D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6DE57DF516995E40AD50B32 /* Pods-kNNRealm_Example-kNNRealm-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-kNNRealm_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = kNNRealm;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		066F1A5A7E6B7A28D09798FC /* Build configuration list for PBXNativeTarget "Pods-kNNRealm_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2730A5ED9A218B8D13FB3BD5 /* Debug */,
+				4DA7DBC5E26662619C878971 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19882CFE806C46492AC19E75 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				751772587E0A7CFC13C1F55A /* Debug */,
+				528E7A2C3E259D750BCDFF26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46A67D1AB4D4A1B80DC987A4 /* Build configuration list for PBXNativeTarget "Pods-kNNRealm_Tests-Quick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				644DC490520CDCB6EF692AB2 /* Debug */,
+				792994F83AF07CEAAF943A41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A01853434FD3B0F3C2D2CC3 /* Build configuration list for PBXNativeTarget "Pods-kNNRealm_Tests-Nimble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE7AAB0E0B70A4BF4AEA1595 /* Debug */,
+				14DDF0CDA512CF8D6EF1EEFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA0F3F8D29ACA321AD41BB48 /* Build configuration list for PBXNativeTarget "Pods-kNNRealm_Tests-kNNRealm-kNNRealm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16368411F11C8C1168313AB1 /* Debug */,
+				DA5EF1D3970247526EFB2B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4C2C7E40ACC9636F263E7DA /* Build configuration list for PBXNativeTarget "Pods-kNNRealm_Example-kNNRealm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AED19549AE4CAB84FECA9B92 /* Debug */,
+				775A8F1E9F187C36391DE9F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB70228857C28A873AE9A74F /* Build configuration list for PBXNativeTarget "Pods-kNNRealm_Tests-kNNRealm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A74AB519B7198EFD896C9C1 /* Debug */,
+				A666B9A6DD7BA01F3C4FACDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E91F69CC365960187CF922DD /* Build configuration list for PBXNativeTarget "Pods-kNNRealm_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEC98E0AFD8E6F5169475C5F /* Debug */,
+				898D36D6E2089F48B91DE096 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFAF7009C56632CFD7244CD8 /* Build configuration list for PBXNativeTarget "Pods-kNNRealm_Example-kNNRealm-kNNRealm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEA3F55A8296CF259B05B2D3 /* Debug */,
+				46CBDD246B9B8C639CBE4F49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5EC8E5663085763F13D95E11 /* Project object */;
+}

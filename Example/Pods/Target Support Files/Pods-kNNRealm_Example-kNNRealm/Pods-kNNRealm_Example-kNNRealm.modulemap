@@ -1,0 +1,6 @@
+framework module kNNRealm {
+  umbrella header "Pods-kNNRealm_Example-kNNRealm-umbrella.h"
+
+  export *
+  module * { export * }
+}
