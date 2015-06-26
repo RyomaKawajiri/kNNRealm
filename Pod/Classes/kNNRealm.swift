@@ -14,7 +14,7 @@ public class kNNRealm<T: Object> {
   private let distance: (l: T, r: T) -> Double
   private let query: (q: T, results: Results<T>) -> Results<T>
 
-  public init(realm: Realm, k: Int, query: (q: T, results: Results<T>) -> Results<T>, distance: (l: T, r: T) -> Double) {
+  public init(realm: Realm, k: Int, distance: (l: T, r: T) -> Double, query: (q: T, results: Results<T>) -> Results<T>) {
     self.k = k
     self.realm = realm
     self.distance = distance
@@ -28,21 +28,6 @@ public class kNNRealm<T: Object> {
   }
 
   public func search(q: T) -> [T] {
-    let results = query(q: q, results: realm.objects(T))
-
-    var ret = [T]()
-    for result in results {
-      ret.append(result)
-    }
-
-    ret.sort { (a, b) -> Bool in
-      return self.distance(l: q, r: a) < self.distance(l: q, r: b)
-    }
-
-    if ret.count > k {
-      ret.removeRange(k..<ret.count)
-    }
-
-    return ret
+    return searchWithQuery(q, realm, k, distance, query)
   }
 }

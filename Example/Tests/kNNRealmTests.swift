@@ -90,7 +90,7 @@ class GeneratedDataSetSpec: QuickSpec {
 
     beforeEach {
       deleteRealmFilesAtPath(realmPath)
-      knn = kNNRealm<Dog>(realm: Realm(path: realmPath), k: k, query: query, distance: distance)
+      knn = kNNRealm<Dog>(realm: Realm(path: realmPath), k: k, distance: distance, query: query)
     }
 
     afterEach {

@@ -93,6 +93,8 @@
 		2BADED54803B70FFF682AFF1 /* safe_int_ops.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 336EB495A9ABAB0A3D077D0F /* safe_int_ops.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
 		2BD282778CECF9B2FD5CF860 /* DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDCA8BA08F7B79CBC1CA98D /* DSL.m */; };
 		2C20A50B81D538B3AC80EB7A /* lang_bind_helper.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 0772F1496A57937CAA852E09 /* lang_bind_helper.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		2CBEBC081B3E1B6100D6F796 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBEBC071B3E1ADA00D6F796 /* Base.swift */; };
+		2CBEBC091B3E1B9B00D6F796 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBEBC071B3E1ADA00D6F796 /* Base.swift */; };
 		2CE897735BBA3E1A3389E09C /* array_blob.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BE7CBB2CD24B999640DEAA3B /* array_blob.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
 		2D167C461476B26CFE5F2340 /* mixed.hpp in Headers */ = {isa = PBXBuildFile; fileRef = CDD41AFFC2F82268F84A311E /* mixed.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
 		2D48FE39D46A4672B5287A99 /* lang_bind_helper.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 0772F1496A57937CAA852E09 /* lang_bind_helper.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -576,6 +578,7 @@
 		276C6A1B366FABEF666C4FC6 /* Pods-kNNRealm_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-kNNRealm_Example-dummy.m"; sourceTree = "<group>"; };
 		295B28BF3589211B73F7E387 /* Pods-kNNRealm_Example-Realm-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-kNNRealm_Example-Realm-prefix.pch"; sourceTree = "<group>"; };
 		2A1AAD7885FC74B826EA6840 /* views.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = views.hpp; path = include/realm/views.hpp; sourceTree = "<group>"; };
+		2CBEBC071B3E1ADA00D6F796 /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
 		2D9607F45C9B5380885634E9 /* Pods-kNNRealm_Tests-Nimble.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kNNRealm_Tests-Nimble.xcconfig"; sourceTree = "<group>"; };
 		2DC3F55F0A0D9245183E5F4C /* Pods-kNNRealm_Tests-Nimble-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kNNRealm_Tests-Nimble-Private.xcconfig"; sourceTree = "<group>"; };
 		2DD871073CD2962B8F241585 /* NMBExceptionCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMBExceptionCapture.h; path = Nimble/objc/NMBExceptionCapture.h; sourceTree = "<group>"; };
@@ -1009,6 +1012,7 @@
 			isa = PBXGroup;
 			children = (
 				D152CD2221F5D826D3574110 /* kNNRealm.swift */,
+				2CBEBC071B3E1ADA00D6F796 /* Base.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -2163,8 +2167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D1108AAB22DE6859E4CFEE6 /* Pods-kNNRealm_Example-kNNRealm-dummy.m in Sources */,
+				2CBEBC091B3E1B9B00D6F796 /* Base.swift in Sources */,
 				D5D4D47A29BB42F3C4393F51 /* kNNRealm.swift in Sources */,
+				8D1108AAB22DE6859E4CFEE6 /* Pods-kNNRealm_Example-kNNRealm-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2286,8 +2291,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCDC834D7F7D397E3971217A /* Pods-kNNRealm_Tests-kNNRealm-dummy.m in Sources */,
+				2CBEBC081B3E1B6100D6F796 /* Base.swift in Sources */,
 				F2CD9AE47F5B28ED67393D3C /* kNNRealm.swift in Sources */,
+				BCDC834D7F7D397E3971217A /* Pods-kNNRealm_Tests-kNNRealm-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
