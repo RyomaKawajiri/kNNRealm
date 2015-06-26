@@ -1,15 +1,15 @@
 {
   "name": "kNNRealm",
   "version": "0.1.0",
-  "summary": "A short description of kNNRealm.",
-  "description": "                       An optional longer description of kNNRealm\n\n                       * Markdown format.\n                       * Don't worry about the indent, we strip it!\n",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/kNNRealm",
+  "summary": "Simple k-nearest neighbors methods library using RealmSwift.",
+  "description": "                       Simple k-nearest neighbors methods library using RealmSwift.\n\n                       Features\n\n                         - Fast approximate search by using powerful realm queries\n                         - More Fast with locality sensitive hashing (LSH)\n                         - Works on both iOS & OS X\n",
+  "homepage": "https://github.com/rkawajiri/kNNRealm",
   "license": "MIT",
   "authors": {
     "Kawajiri Ryoma": "ryoma.edison@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/kNNRealm.git",
+    "git": "https://github.com/rkawajiri/kNNRealm.git",
     "tag": "0.1.0"
   },
   "platforms": {
@@ -20,6 +20,11 @@
   "resource_bundles": {
     "kNNRealm": [
       "Pod/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "RealmSwift": [
+      "~> 0.92.3"
     ]
   }
 }

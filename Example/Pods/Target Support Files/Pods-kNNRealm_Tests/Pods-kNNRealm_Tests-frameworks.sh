@@ -50,10 +50,14 @@ code_sign() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Nimble.framework'
   install_framework 'Quick.framework'
+  install_framework 'Realm.framework'
+  install_framework 'RealmSwift.framework'
   install_framework 'kNNRealm.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Nimble.framework'
   install_framework 'Quick.framework'
+  install_framework 'Realm.framework'
+  install_framework 'RealmSwift.framework'
   install_framework 'kNNRealm.framework'
 fi
