@@ -41,14 +41,16 @@ class GeneratedDataSetSpec: QuickSpec {
       return dog
     }
 
+    let k = 3
+
     let query = { (q: Dog, results: Results<Dog>) -> Results<Dog> in
       return results
-        .filter("height >= ?",     q.height - 2)
-        .filter("height <= ?",     q.height + 2)
-        .filter("weight >= ?",     q.weight - 2)
-        .filter("weight <= ?",     q.weight + 2)
-        .filter("bodyLength >= ?", q.bodyLength - 2)
-        .filter("bodyLength <= ?", q.bodyLength + 2)
+        .filter("height >= \(q.height - 2)")
+        .filter("height <= \(q.height + 2)")
+        .filter("weight >= \(q.weight - 2)")
+        .filter("weight <= \(q.weight + 2)")
+        .filter("bodyLength >= \(q.bodyLength - 2)")
+        .filter("bodyLength <= \(q.bodyLength + 2)")
     }
 
     let distance = { (l: Dog, r: Dog) -> Double in
@@ -60,7 +62,7 @@ class GeneratedDataSetSpec: QuickSpec {
     beforeEach {
       // set test data to realm
       deleteRealmFilesAtPath(realmPath)
-      knn = kNNRealm<Dog>(realm: Realm(path: realmPath), k: 3, query: query, distance: distance)
+      knn = kNNRealm<Dog>(realm: Realm(path: realmPath), k: k, query: query, distance: distance)
     }
 
     afterEach {
@@ -73,6 +75,13 @@ class GeneratedDataSetSpec: QuickSpec {
         it("can be added data") {
           knn?.add(data)
           expect(Realm(path: realmPath).objects(Dog).count) == data.count
+        }
+
+        it("can search correct label") {
+          for dog in data {
+            let nearestDogs = knn?.search(dog)
+            expect(nearestDogs?.count) == k
+          }
         }
       }
 
