@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'kNNRealm_Example', :exclusive => true do
+  pod "kNNRealm", :path => "../"
+end
+
+target 'kNNRealm_Tests', :exclusive => true do
+  pod "kNNRealm", :path => "../"
+
+  pod 'Quick', '~> 0.3.1'
+  pod 'Nimble'
+end
