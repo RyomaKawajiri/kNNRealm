@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C6646051B3D19EA00920374 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6646031B3D19BE00920374 /* Utils.swift */; };
+		2C6646071B3D1EE400920374 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6646061B3D1EE400920374 /* Dog.swift */; };
 		2C6EA5651B3CE8A5003EF95F /* kNNRealmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6EA5641B3CE8A5003EF95F /* kNNRealmTests.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -29,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		23C3631F4D0D1C26A4DC558A /* Pods_kNNRealm_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kNNRealm_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C6646031B3D19BE00920374 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		2C6646061B3D1EE400920374 /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		2C6EA5641B3CE8A5003EF95F /* kNNRealmTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kNNRealmTests.swift; sourceTree = "<group>"; };
 		360161044C1D4AB5C06F56D9 /* Pods-kNNRealm_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kNNRealm_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-kNNRealm_Tests/Pods-kNNRealm_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		41DC13C796ED88EDE9F02C25 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 			children = (
 				2C6EA5641B3CE8A5003EF95F /* kNNRealmTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				2C6646031B3D19BE00920374 /* Utils.swift */,
+				2C6646061B3D1EE400920374 /* Dog.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -367,6 +373,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C6646051B3D19EA00920374 /* Utils.swift in Sources */,
+				2C6646071B3D1EE400920374 /* Dog.swift in Sources */,
 				2C6EA5651B3CE8A5003EF95F /* kNNRealmTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
