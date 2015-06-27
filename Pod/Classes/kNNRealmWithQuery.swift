@@ -1,5 +1,5 @@
 //
-//  kNNRealm.swift
+//  kNNRealmWithQuery.swift
 //  kNNRealm
 //
 //  Created by Kawajiri Ryoma on 5/9/15.
@@ -8,7 +8,9 @@
 
 import RealmSwift
 
-public class kNNRealm<T: Object> {
+public class kNNRealmWithQuery<T: Object> {
+  public typealias DistanceType = (l: T, r: T) -> Double
+
   private let k: Int
   private let realm: Realm
   private let distance: (l: T, r: T) -> Double

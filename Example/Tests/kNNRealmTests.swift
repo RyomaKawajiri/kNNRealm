@@ -1,6 +1,6 @@
 //
-//  kNNRealmTests.swift
-//  kNNRealm
+//  kNNRealmTestsWithGeneratedData.swift
+//  kNNRealmTestsWithGeneratedData
 //
 //  Created by Kawajiri Ryoma on 6/26/15.
 //  Copyright (c) 2015 Kawajiri Ryoma. All rights reserved.
@@ -12,7 +12,7 @@ import kNNRealm
 import RealmSwift
 import Darwin
 
-class GeneratedDataSetSpec: QuickSpec {
+class kNNRealmTestsWithGeneratedData: QuickSpec {
 
   override func spec() {
     let documentsDirectory = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
@@ -57,7 +57,7 @@ class GeneratedDataSetSpec: QuickSpec {
       return pow(l.height - r.height, 2) + pow(l.weight - r.weight, 2) + pow(l.bodyLength - r.bodyLength, 2)
     }
 
-    var knn: kNNRealm<Dog>?
+    var knn: kNNRealmWithQuery<Dog>?
 
     let checkSearchCorrectly = { () -> Void in
       for dog in data {
@@ -90,7 +90,7 @@ class GeneratedDataSetSpec: QuickSpec {
 
     beforeEach {
       deleteRealmFilesAtPath(realmPath)
-      knn = kNNRealm<Dog>(realm: Realm(path: realmPath), k: k, distance: distance, query: query)
+      knn = kNNRealmWithQuery<Dog>(realm: Realm(path: realmPath), k: k, distance: distance, query: query)
     }
 
     afterEach {

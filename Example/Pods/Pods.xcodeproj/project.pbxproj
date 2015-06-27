@@ -358,7 +358,7 @@
 		D1FC10D2D0E0E81248066A89 /* BeLessThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0671004D48D90FA627D183C2 /* BeLessThan.swift */; };
 		D20FBF13A1C8A2E92BD284CF /* column_tpl.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8058643F84A8D915526C119A /* column_tpl.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
 		D2805FD6602B0436F443A6BE /* BeGreaterThanOrEqualTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F20F1286E1AD8ED78030B9D /* BeGreaterThanOrEqualTo.swift */; };
-		D5D4D47A29BB42F3C4393F51 /* kNNRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = D152CD2221F5D826D3574110 /* kNNRealm.swift */; };
+		D5D4D47A29BB42F3C4393F51 /* kNNRealmWithQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = D152CD2221F5D826D3574110 /* kNNRealmWithQuery.swift */; };
 		D622095416E9BAE65E8D1F6A /* column_string_enum.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 15951C467F34CA666A677DDB /* column_string_enum.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
 		D67B076FF037F3F2F4B2D4C3 /* RLMMigration.mm in Sources */ = {isa = PBXBuildFile; fileRef = F0412FDB459A28B1E0413594 /* RLMMigration.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"0.92.4\"'"; }; };
 		D69706D7B23DB20283350C0A /* terminate.hpp in Headers */ = {isa = PBXBuildFile; fileRef = CCBD895D3C462B9C6778D025 /* terminate.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -402,7 +402,7 @@
 		EFBCB94C23766FCC36159CD9 /* QuickSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BD5FBF7AC35E9EF864A88C2 /* QuickSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1530CF40D3EB59762B535E6 /* RLMMigration.h in Headers */ = {isa = PBXBuildFile; fileRef = 993664F4F93607A7B2E9788F /* RLMMigration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F263CFA455DEBADB75E346F0 /* unicode.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5D1D9E202069392E67C79B3E /* unicode.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
-		F2CD9AE47F5B28ED67393D3C /* kNNRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = D152CD2221F5D826D3574110 /* kNNRealm.swift */; };
+		F2CD9AE47F5B28ED67393D3C /* kNNRealmWithQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = D152CD2221F5D826D3574110 /* kNNRealmWithQuery.swift */; };
 		F32883873D5C50835F93428A /* AsyncMatcherWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD89DAEFF2C9AC914E44273 /* AsyncMatcherWrapper.swift */; };
 		F36EABFB57F71910F73AD06E /* RLMObjectSchema.h in Headers */ = {isa = PBXBuildFile; fileRef = 33354BD7A7FD9FC8A67687C0 /* RLMObjectSchema.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F390B66E8063DA5E6C1B1BCE /* NonNilMatcherWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D6B356398FC98CBDD48003 /* NonNilMatcherWrapper.swift */; };
@@ -791,7 +791,7 @@
 		CE6D1695D80E36E78E94E695 /* MatcherFunc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherFunc.swift; path = Nimble/Wrappers/MatcherFunc.swift; sourceTree = "<group>"; };
 		CE991866D4ECACECB6FF41D3 /* Equal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Equal.swift; path = Nimble/Matchers/Equal.swift; sourceTree = "<group>"; };
 		CF18771565C5E15BAB6A1AEA /* query_expression.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = query_expression.hpp; path = include/realm/query_expression.hpp; sourceTree = "<group>"; };
-		D152CD2221F5D826D3574110 /* kNNRealm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = kNNRealm.swift; sourceTree = "<group>"; };
+		D152CD2221F5D826D3574110 /* kNNRealmWithQuery.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = kNNRealmWithQuery.swift; sourceTree = "<group>"; };
 		D223BD2A1FF76B405F3078AF /* array_integer.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = array_integer.hpp; path = include/realm/array_integer.hpp; sourceTree = "<group>"; };
 		D310CD4DF4DBA91BCDE33E6A /* RLMObject_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObject_Private.h; path = include/realm/RLMObject_Private.h; sourceTree = "<group>"; };
 		D36BFDD9474CC3B8E2FB8FF1 /* table_view.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = table_view.hpp; path = include/realm/table_view.hpp; sourceTree = "<group>"; };
@@ -1011,7 +1011,7 @@
 		44DCD0EBC7C5933500055593 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D152CD2221F5D826D3574110 /* kNNRealm.swift */,
+				D152CD2221F5D826D3574110 /* kNNRealmWithQuery.swift */,
 				2CBEBC071B3E1ADA00D6F796 /* Base.swift */,
 			);
 			path = Classes;
@@ -2168,7 +2168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CBEBC091B3E1B9B00D6F796 /* Base.swift in Sources */,
-				D5D4D47A29BB42F3C4393F51 /* kNNRealm.swift in Sources */,
+				D5D4D47A29BB42F3C4393F51 /* kNNRealmWithQuery.swift in Sources */,
 				8D1108AAB22DE6859E4CFEE6 /* Pods-kNNRealm_Example-kNNRealm-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2292,7 +2292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CBEBC081B3E1B6100D6F796 /* Base.swift in Sources */,
-				F2CD9AE47F5B28ED67393D3C /* kNNRealm.swift in Sources */,
+				F2CD9AE47F5B28ED67393D3C /* kNNRealmWithQuery.swift in Sources */,
 				BCDC834D7F7D397E3971217A /* Pods-kNNRealm_Tests-kNNRealm-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

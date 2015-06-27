@@ -1,6 +1,6 @@
 //
 //  Base.swift
-//  Pods
+//  kNNRealm
 //
 //  Created by Kawajiri Ryoma on 6/27/15.
 //
@@ -32,5 +32,3 @@ public func search<T: Object>(q: T, realm: Realm, k: Int, distance: (l: T, r: T)
 public func searchWithQuery<T: Object>(q: T, realm: Realm, k: Int, distance: (l: T, r: T) -> Double, query: (q: T, results: Results<T>) -> Results<T>) -> [T] {
   return search(q, query(q: q, results: realm.objects(T)), k, distance)
 }
-
-
