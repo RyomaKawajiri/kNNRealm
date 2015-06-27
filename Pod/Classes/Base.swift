@@ -8,7 +8,7 @@
 
 import RealmSwift
 
-public func search<T: Object>(q: T, results: Results<T>, k: Int, distance: (l: T, r: T) -> Double) -> [T] {
+public func searchWithResults<T: Object>(q: T, results: Results<T>, k: Int, distance: (l: T, r: T) -> Double) -> [T] {
   var ret = [T]()
   for result in results {
     ret.append(result)
@@ -25,10 +25,10 @@ public func search<T: Object>(q: T, results: Results<T>, k: Int, distance: (l: T
   return ret
 }
 
-public func search<T: Object>(q: T, realm: Realm, k: Int, distance: (l: T, r: T) -> Double) -> [T] {
-  return search(q, realm.objects(T), k, distance)
+public func searchWithRealm<T: Object>(q: T, realm: Realm, k: Int, distance: (l: T, r: T) -> Double) -> [T] {
+  return searchWithResults(q, realm.objects(T), k, distance)
 }
 
 public func searchWithQuery<T: Object>(q: T, realm: Realm, k: Int, distance: (l: T, r: T) -> Double, query: (q: T, results: Results<T>) -> Results<T>) -> [T] {
-  return search(q, query(q: q, results: realm.objects(T)), k, distance)
+  return searchWithResults(q, query(q: q, results: realm.objects(T)), k, distance)
 }
