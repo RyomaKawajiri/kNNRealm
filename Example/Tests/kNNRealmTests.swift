@@ -43,61 +43,127 @@ class kNNRealmTestsWithGeneratedData: QuickSpec {
 
     let k = 3
 
-    let query = { (q: Dog, results: Results<Dog>) -> Results<Dog> in
-      return results
-        .filter("height >= \(q.height - 2)")
-        .filter("height <= \(q.height + 2)")
-        .filter("weight >= \(q.weight - 2)")
-        .filter("weight <= \(q.weight + 2)")
-        .filter("bodyLength >= \(q.bodyLength - 2)")
-        .filter("bodyLength <= \(q.bodyLength + 2)")
-    }
-
     let distance = { (l: Dog, r: Dog) -> Double in
       return pow(l.height - r.height, 2) + pow(l.weight - r.weight, 2) + pow(l.bodyLength - r.bodyLength, 2)
     }
 
-    var knn: kNNRealmWithQuery<Dog>?
-
-    let checkSearchCorrectly = { () -> Void in
-      for dog in data {
-        let nearestDogs = knn?.search(dog)
-        expect(nearestDogs?.count) == k
-      }
-
-      for dog in data {
-        let nearestDogs = knn?.search(dog)
-        let actual = nearestDogs?.map { dog in Int(dog.height) }
-        let i = Int(dog.height)
-        switch i {
-        case 1:
-          expect(actual) == [1, 2, 3]
-          break
-
-        case 2...8:
-          expect(actual) == [i, i-1, i+1]
-          break
-
-        case 9:
-          expect(actual) == [9, 8, 7]
-          break
-
-        default:
-          break
-        }
-      }
-    }
-
     beforeEach {
       deleteRealmFilesAtPath(realmPath)
-      knn = kNNRealmWithQuery<Dog>(realm: Realm(path: realmPath), k: k, distance: distance, query: query)
     }
 
     afterEach {
       deleteRealmFilesAtPath(realmPath)
     }
 
-    describe("basic") {
+    describe("simple") {
+      var knn: kNNRealmSimple<Dog>?
+
+      beforeEach {
+        knn = kNNRealmSimple<Dog>(realm: Realm(path: realmPath), k: k, distance: distance)
+      }
+
+      let checkSearchCorrectly = { () -> Void in
+        for dog in data {
+          let nearestDogs = knn?.search(dog)
+          expect(nearestDogs?.count) == k
+        }
+
+        for dog in data {
+          let nearestDogs = knn?.search(dog)
+          let actual = nearestDogs?.map { dog in Int(dog.height) }
+          let i = Int(dog.height)
+          switch i {
+          case 1:
+            expect(actual) == [1, 2, 3]
+            break
+
+          case 2...8:
+            expect(actual) == [i, i-1, i+1]
+            break
+
+          case 9:
+            expect(actual) == [9, 8, 7]
+            break
+
+          default:
+            break
+          }
+        }
+      }
+
+      describe("when added data by kNNRealm") {
+        it("works") {
+          knn?.add(data)
+          expect(Realm(path: realmPath).objects(Dog).count) == data.count
+        }
+
+        it("can search correctly") {
+          knn?.add(data)
+          checkSearchCorrectly()
+        }
+      }
+
+      describe("when with pre-built realm") {
+        beforeEach {
+          let realm = Realm(path: realmPath)
+          realm.write {
+            realm.add(data)
+          }
+        }
+
+        it ("can search correctly") {
+          checkSearchCorrectly()
+        }
+      }
+    }
+
+    describe("with query") {
+
+      var knn: kNNRealmWithQuery<Dog>?
+
+      let query = { (q: Dog, results: Results<Dog>) -> Results<Dog> in
+        return results
+          .filter("height >= \(q.height - 2)")
+          .filter("height <= \(q.height + 2)")
+          .filter("weight >= \(q.weight - 2)")
+          .filter("weight <= \(q.weight + 2)")
+          .filter("bodyLength >= \(q.bodyLength - 2)")
+          .filter("bodyLength <= \(q.bodyLength + 2)")
+      }
+
+      beforeEach {
+        knn = kNNRealmWithQuery<Dog>(realm: Realm(path: realmPath), k: k, distance: distance, query: query)
+      }
+
+      let checkSearchCorrectly = { () -> Void in
+        for dog in data {
+          let nearestDogs = knn?.search(dog)
+          expect(nearestDogs?.count) == k
+        }
+
+        for dog in data {
+          let nearestDogs = knn?.search(dog)
+          let actual = nearestDogs?.map { dog in Int(dog.height) }
+          let i = Int(dog.height)
+          switch i {
+          case 1:
+            expect(actual) == [1, 2, 3]
+            break
+
+          case 2...8:
+            expect(actual) == [i, i-1, i+1]
+            break
+
+          case 9:
+            expect(actual) == [9, 8, 7]
+            break
+
+          default:
+            break
+          }
+        }
+      }
+
       describe("when added data by kNNRealm") {
         it("works") {
           knn?.add(data)
